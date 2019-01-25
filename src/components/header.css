@@ -54,6 +54,9 @@
     #fyrText {
       display: none;
     }
+    #FYRlogo {
+        font-size: 40px;
+    }
     .header {
         padding: 0 15px;
     }
