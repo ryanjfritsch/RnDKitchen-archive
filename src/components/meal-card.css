@@ -1,0 +1,40 @@
+
+.mealListWrapper {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.mealListContainer {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .mealListContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .mealListContainer {
+        width: 660px;
+    }
+}
+
+.mealCard {
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    margin: 10px 15px;
+}
+
+.link {
+    cursor: default;
+}

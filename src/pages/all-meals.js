@@ -1,42 +1,42 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image';
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
 
-import './post.css';
+import '../components/meal-card.css'
 
-const IndexPage = (props) => {
 
-    const postList = props.data.allMarkdownRemark;
+const AllMealsPage = (props) => {
 
-    console.log(props.data)
+  const mealList = props.data.allMarkdownRemark;
 
     return (
       <Layout>
-        <h3>Carousel Coming Soon</h3>
-        {/* {postList.edges.map(({ node }, i) => (
-          <Link to={node.fields.slug} className="link">
-            <div className="post-list">
-              <h1>{node.frontmatter.title}</h1>
-              <Img fixed={postList.edges[i].node.frontmatter.image.childImageSharp.fixed} />
-              <span>{node.frontmatter.date}</span>
-              <p>{node.excerpt}</p>
-            </div>
-          </Link>
-        ))} */}
+        <div className="mealListWrapper">
+          <div className="mealListContainer">
+            {mealList.edges.map(({ node }, i) => (
+                <Link to={node.fields.slug} className="link">
+                    <div className="mealCard">
+                      <h1>{node.frontmatter.title}</h1>
+                      <Img fixed={mealList.edges[i].node.frontmatter.image.childImageSharp.fixed} />
+                      <span>{node.frontmatter.date}</span>
+                      <p>{node.excerpt}</p>
+                    </div>
+                </Link>
+            ))}
+          </div>
+        </div>
       </Layout>
     )
 
 }
 
-export default IndexPage
+export default AllMealsPage
 
-
-export const listQuery = graphql`
-  query ListQuery {
+export const mealQuery = graphql`
+  query MealQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

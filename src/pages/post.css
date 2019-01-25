@@ -1,0 +1,10 @@
+
+.post-list {
+    outline: 1px solid grey;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+
+.post-list:hover {
+    transform: scale(1.01);
+}
