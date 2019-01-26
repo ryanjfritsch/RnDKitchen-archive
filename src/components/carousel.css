@@ -11,13 +11,18 @@
     background-origin: bottom;
     margin: 0;
     overflow: hidden;
+    opacity: 0;
+    animation-name: fadeInCarousel;
+    animation-delay: 1.3s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    visibility: hidden;
   }
   
-  
-  
-  #landingBottom {
-    width: 100%;
-    height: 300px;
+  @keyframes fadeInCarousel {
+    0%   { opacity: 0; visibility: visible; }
+    100%   { opacity: 1; visibility: visible; }
   }
   
   
@@ -168,4 +173,11 @@
     font-size: 40px;
     color: #2B2B2B;
     font-weight: 300;
+  }
+
+    
+  
+  #landingBottom {
+    width: 100%;
+    height: 300px;
   }
