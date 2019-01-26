@@ -4,36 +4,29 @@ import './carousel.css';
 
 export default class Carousel extends Component {
 
-    // const postList = props.data.allMarkdownRemark;
-
-    state = {
-      windowHeight: undefined,
-      windowWidth: undefined,
-      scaleRatio: undefined
-    }
-  
-    handleResize = () => this.setState({
-      windowHeight: window.innerHeight,
-      windowWidth: window.innerWidth,
-      scaleRatio: this.state.windowWidth/1360
-    });
-  
-    componentDidMount() {
-      this.handleResize();
-      window.addEventListener('resize', this.handleResize)
-      this.handleResize();
-    }
-  
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.handleResize)
-    }
-
-    // handleResize();
+    constructor(props) {
+        super(props);
+        this.state = { scaleRatio: 1 };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+      }
+      
+      componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      updateWindowDimensions() {
+        this.setState({ scaleRatio: window.innerWidth/1360 });
+      }
   
 
   render() {
     return (
-        <div id="rotatingFoodWrapper" style={{ zoom: window.innerWidth/1360 }}>
+        <div id="rotatingFoodWrapper" style={{ zoom: this.state.scaleRatio }}>
 
         <div id="tableWrapper">
             <div id="table">
