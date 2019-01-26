@@ -1,16 +1,19 @@
 
 .mealListWrapper {
-    width: 100%;
+    max-width: 1200px;
     padding-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center; 
+    align-items: center;
+    margin: auto;
 }
 
 .mealListContainer {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 

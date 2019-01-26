@@ -1,25 +1,24 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image';
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
 
-import './post.css';
+import Carousel from '../components/carousel';
 
 const IndexPage = (props) => {
 
-    const postList = props.data.allMarkdownRemark;
-
-    console.log(props.data)
-
     return (
       <Layout>
-        <h3>Carousel Coming Soon</h3>
+        <Carousel>
+        </Carousel>
+        <div style={{ width: '100%', height: '500px' }}>
+          <h4>About RnD Kitchen</h4>
+        </div>
         {/* {postList.edges.map(({ node }, i) => (
-          <Link to={node.fields.slug} className="link">
-            <div className="post-list">
+          <Link to={node.fields.slug} classNameName="link">
+            <div classNameName="post-list">
               <h1>{node.frontmatter.title}</h1>
               <Img fixed={postList.edges[i].node.frontmatter.image.childImageSharp.fixed} />
               <span>{node.frontmatter.date}</span>

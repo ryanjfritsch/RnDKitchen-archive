@@ -2,7 +2,9 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import './header.css'
+import './header.css';
+import circleLogo from "../images/circleLogoSM.png";
+import circleTextLogo from "../images/circleTextLogoSM.png";
 
 
 const Header = ({ siteTitle }) => (
@@ -11,8 +13,9 @@ const Header = ({ siteTitle }) => (
       <Link to="/" 
         style={{ textDecoration: 'none' }}
         activeStyle={{ cursor: 'default' }}>
-        <span id="FYRlogo">FYR</span>
-        <span id="fyrText">Food Year's Resolution</span>
+        {/* <span id="FYRlogo">R+D</span> */}
+        <img src={circleLogo} id="fyrLogo" />
+        <span id="fyrText">Kitchen</span>
       </Link>
       <div class="subHeaderText" id="rightHeaderText">
           <Link to="all-meals"

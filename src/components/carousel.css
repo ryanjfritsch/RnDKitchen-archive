@@ -1,0 +1,171 @@
+
+  
+  #rotatingFoodWrapper {
+    width: 1370px;
+    height: 718px;
+    background-color: #171c23;
+    box-sizing: border-box;
+    background-image: url("../images/kitchenBLUR.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-origin: bottom;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  
+  
+  #landingBottom {
+    width: 100%;
+    height: 300px;
+  }
+  
+  
+  
+  #tableWrapper {
+    position: relative;
+    left: -470px;
+    top: -100px;
+    width: 1000px;
+    height: 1000px;
+    perspective: 1200px;
+    zoom: 1.1;
+    z-index: 1;
+  }
+  
+  #table {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../images/woodCircle.png");
+    background-size: 100%;
+    transform-origin: center;
+    transform: rotateX(78deg) rotateZ(140deg);
+    animation-name: tableSpin;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  html {
+    --itemStart: -40deg;
+  }
+  
+  .tableItemWrapper {
+    width: 330px;
+    height: 330px;
+    position: relative;
+    margin: 0;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .tableItemImg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #tableItemWrap1 {
+    left: 350px;
+    transform: rotateZ(var(--itemStart)) translateZ(160px) rotateX(-90deg) rotateY(90deg);
+    animation-name: itemRotate;
+  }
+  
+  #tableItemWrap2 {
+    left: 300px;
+    top: 350px;
+    transform: rotateZ(var(--itemStart)) translateZ(160px) rotateX(-90deg) rotateY(90deg);
+    animation-name: itemRotate;
+  }
+  
+  
+  @keyframes tableSpin {
+    0%   { transform: rotateX(78deg) rotateZ(140deg); }
+    10%   { transform: rotateX(78deg) rotateZ(320deg); }
+    20%   { transform: rotateX(78deg) rotateZ(320deg); }
+    30%   { transform: rotateX(78deg) rotateZ(320deg); }
+    40%   { transform: rotateX(78deg) rotateZ(320deg); }
+    50%   { transform: rotateX(78deg) rotateZ(320deg); }
+    60%   { transform: rotateX(78deg) rotateZ(500deg); }
+    70%   { transform: rotateX(78deg) rotateZ(500deg); }
+    80%   { transform: rotateX(78deg) rotateZ(500deg); }
+    90%   { transform: rotateX(78deg) rotateZ(500deg); }
+    100%   { transform: rotateX(78deg) rotateZ(500deg); }
+  }
+  
+  html {
+    --itemStart: -40deg;
+    --itemMid: -220deg;
+    --itemEnd: -400deg;
+  }
+  
+  @keyframes itemRotate {
+    0%    { transform: rotateZ(var(--itemStart)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    10%   { transform: rotateZ(var(--itemMid)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    20%   { transform: rotateZ(var(--itemMid)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    30%   { transform: rotateZ(var(--itemMid)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    40%   { transform: rotateZ(var(--itemMid)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    50%   { transform: rotateZ(var(--itemMid)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    60%   { transform: rotateZ(var(--itemEnd)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    70%   { transform: rotateZ(var(--itemEnd)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    80%   { transform: rotateZ(var(--itemEnd)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    90%   { transform: rotateZ(var(--itemEnd)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+    100%  { transform: rotateZ(var(--itemEnd)) translateZ(160px) rotateX(-90deg) rotateY(90deg); }
+  }
+  
+  
+  
+  
+  
+  #card {
+    width: 550px;
+    height: 600px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    position: relative;
+    left: 770px;
+    top: -1045px;
+    background-color: #FBFBFA;
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Serif', sans-serif;
+    animation-name: menuSlide;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 5s;
+  }
+  
+  @keyframes menuSlide {
+    0%   { transform: translate(0px, 0px); }
+    5%   { transform: translate(1000px, 0px); }
+    10%   { transform: translate(0px, 0px); }
+    15%   { transform: translate(0px, 0px); }
+    20%   { transform: translate(0px, 0px); }
+    25%   { transform: translate(0px, 0px); }
+    30%   { transform: translate(0px, 0px); }
+    35%   { transform: translate(0px, 0px); }
+    40%   { transform: translate(0px, 0px); }
+    45%   { transform: translate(0px, 0px); }
+    50%   { transform: translate(0px, 0px); }
+    55%   { transform: translate(1000px, 0px); }
+    60%   { transform: translate(0px, 0px); }
+    65%   { transform: translate(0px, 0px); }
+    70%   { transform: translate(0px, 0px); }
+    75%   { transform: translate(0px, 0px); }
+    80%   { transform: translate(0px, 0px); }
+    85%   { transform: translate(0px, 0px); }
+    90%   { transform: translate(0px, 0px); }
+    95%   { transform: translate(0px, 0px); }
+    100%   { transform: translate(0px, 0px); }
+  }
+  
+  .cardTitle {
+    font-size: 40px;
+    color: #2B2B2B;
+    font-weight: 300;
+  }
