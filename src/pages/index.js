@@ -10,7 +10,7 @@ import Carousel from '../components/carousel';
 const IndexPage = (props) => {
 
     return (
-      <Layout>
+      <Layout title="R&D Kitchen">
         <Carousel>
         </Carousel>
         <div style={{ width: '100%', height: '500px' }}>
