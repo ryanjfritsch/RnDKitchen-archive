@@ -37,7 +37,6 @@ export const listQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
-            cookTime
             image {
               childImageSharp {
                   fixed(width: 330, height: 330) {
