@@ -60,7 +60,7 @@ export default class Carousel extends Component {
             else if(currentMeal === 3){
                 this.setState({ currentMealShowing: this.state.meal3 })
             }
-        }, 500);
+        }, 50);
       }
 
       updateCarouselTable(mealNum) {
@@ -102,11 +102,9 @@ render() {
             <div id="table">
                 <div id="tableItemWrap1" className="tableItemWrapper">
                     <img id="tableItem1" className="tableItemImg" src={meal1Image} alt="" />
-                    {/* <Img id="tableItem1" className="tableItemImg" fixed={this.state.mealPic1.frontmatter.image.childImageSharp.fixed} /> */}
                 </div>
                 <div id="tableItemWrap2" className="tableItemWrapper">
                     <img id="tableItem2" className="tableItemImg" src={meal2Image} alt="" />
-                    {/* <Img id="tableItem1" className="tableItemImg" fixed={this.state.mealPic2.frontmatter.image.childImageSharp.fixed} /> */}
                 </div>
             </div>
         </div>
