@@ -136,7 +136,7 @@
     top: -1045px;
     background-color: #FBFBFA;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'PT Serif', sans-serif;
     animation-name: menuSlide;
     animation-timing-function: ease-in-out;

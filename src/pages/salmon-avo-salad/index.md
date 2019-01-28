@@ -1,8 +1,8 @@
 ---
-title: "California Rolls"
+title: "Salmon Avocado Salad"
 description: This post is related to the gatsbyjs
 date: '2019-01-05'
-image: californiaRoll.png
+image: salmonSalad.png
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

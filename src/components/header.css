@@ -57,7 +57,7 @@
     }
     #fyrLogo {
         content: url("../images/circleTextLogoSM.png");
-        top: 0px;
+        top: 2px;
     }
     .header {
         padding: 0 15px;

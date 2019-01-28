@@ -1,7 +1,7 @@
 ---
 title: "California Rolls"
 description: This post is related to the gatsbyjs
-date: '2019-01-05'
+date: '2019-01-21'
 image: californiaRoll.png
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.

@@ -5,7 +5,6 @@ difficulty: 'Easy'
 date: '2019-01-13'
 rating: 4
 prepTime: '30 minutes'
-cookTime: '6 hours'
 image: italianBeef.png
 ---
 Don't build a website with last decade's tech. The future of the web is mobile,
