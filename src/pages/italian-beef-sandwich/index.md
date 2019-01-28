@@ -4,6 +4,7 @@ description: This post is related to the gatsbyjs
 difficulty: 'Easy'
 date: '2019-01-13'
 rating: 4
+shortName: 'italianBeef'
 prepTime: '30 minutes'
 image: italianBeef.png
 ---

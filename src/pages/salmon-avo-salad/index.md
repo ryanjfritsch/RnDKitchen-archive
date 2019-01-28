@@ -1,7 +1,11 @@
 ---
 title: "Salmon Avocado Salad"
 description: This post is related to the gatsbyjs
+difficulty: 'Easy'
 date: '2019-01-05'
+rating: 4
+shortName: 'salmonSalad'
+prepTime: '30 minutes'
 image: salmonSalad.png
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.

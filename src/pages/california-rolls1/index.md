@@ -1,7 +1,11 @@
 ---
 title: "California Rolls"
 description: This post is related to the gatsbyjs
-date: '2019-01-21'
+difficulty: 'Easy'
+date: '2019-01-20'
+rating: 4
+shortName: 'californiaRoll'
+prepTime: '30 minutes'
 image: californiaRoll.png
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.

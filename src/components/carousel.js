@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 import './carousel.css';
 
@@ -17,6 +17,7 @@ export default class Carousel extends Component {
             mealPic1: props.mealData[0].node,
             mealPic2: props.mealData[1].node
         };
+
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 
       }
@@ -90,19 +91,22 @@ export default class Carousel extends Component {
 
   
 
-  render() {
+render() {
+    const meal1Image = require('../images/'+this.state.mealPic1.frontmatter.shortName+'.png');
+    const meal2Image = require('../images/'+this.state.mealPic2.frontmatter.shortName+'.png');
+
     return (
         <div id="rotatingFoodWrapper" style={{ zoom: this.state.scaleRatio }}>
 
         <div id="tableWrapper">
             <div id="table">
                 <div id="tableItemWrap1" className="tableItemWrapper">
-                    {/* <img id="tableItem1" className="tableItemImg" src={"/images/salmonSalad.png"} alt="" /> */}
-                    <Img id="tableItem1" className="tableItemImg" fixed={this.state.mealPic1.frontmatter.image.childImageSharp.fixed} />
+                    <img id="tableItem1" className="tableItemImg" src={meal1Image} alt="" />
+                    {/* <Img id="tableItem1" className="tableItemImg" fixed={this.state.mealPic1.frontmatter.image.childImageSharp.fixed} /> */}
                 </div>
                 <div id="tableItemWrap2" className="tableItemWrapper">
-                    {/* <img id="tableItem2" className="tableItemImg" src={this.state.mealPic2.frontmatter.cookTime} alt="" /> */}
-                    <Img id="tableItem1" className="tableItemImg" fixed={this.state.mealPic2.frontmatter.image.childImageSharp.fixed} />
+                    <img id="tableItem2" className="tableItemImg" src={meal2Image} alt="" />
+                    {/* <Img id="tableItem1" className="tableItemImg" fixed={this.state.mealPic2.frontmatter.image.childImageSharp.fixed} /> */}
                 </div>
             </div>
         </div>
