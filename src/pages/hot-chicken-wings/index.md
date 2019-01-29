@@ -6,7 +6,7 @@ date: '2019-01-26'
 rating: 5
 shortName: 'wingsNoBottles'
 prepTime: '30 minutes'
-image: wingsBottles.png
+image: hotWingsHeader.png
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

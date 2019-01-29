@@ -22,10 +22,14 @@ const AllMealsPage = (props) => {
                 <Link to={node.fields.slug} className="link">
                     
                     <div className="mealCard">
-                      <Img fixed={mealList.edges[i].node.frontmatter.image.childImageSharp.fixed} style={{ marginBottom: '28px' }}/>
-                      <span className="mealCardTitle">{node.frontmatter.title}</span>
-                      <span className="mealCardDate">{node.frontmatter.date}</span>
-                      <StarsRating rating={ node.frontmatter.rating }></StarsRating>
+                      <div>
+                        <Img fixed={mealList.edges[i].node.frontmatter.image.childImageSharp.fixed}/>
+                      </div>
+                      <div className="mealCardLowerHalf">
+                        <span className="mealCardTitle">{node.frontmatter.title}</span>
+                        <span className="mealCardDate">{node.frontmatter.date}</span>
+                        <StarsRating rating={ node.frontmatter.rating }></StarsRating>
+                      </div>
                     </div>
 
                 </Link>
@@ -55,7 +59,7 @@ export const mealQuery = graphql`
             rating
             image {
               childImageSharp {
-                  fixed(width: 270, height: 270) {
+                  fixed(width: 300, height: 300) {
                     ...GatsbyImageSharpFixed
                   }
                   fluid(maxWidth: 700) {

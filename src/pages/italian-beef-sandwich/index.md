@@ -6,7 +6,7 @@ date: '2019-01-13'
 rating: 4
 shortName: 'italianBeef'
 prepTime: '30 minutes'
-image: italianBeef.png
+image: italianBeefHeader.png
 ---
 Don't build a website with last decade's tech. The future of the web is mobile,
  JavaScript and APIs—the
