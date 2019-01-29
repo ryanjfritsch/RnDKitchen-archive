@@ -183,11 +183,19 @@
     100%   { transform: translate(0px, 0px); }
   }
   
-  .cardTitle {
-    font-size: 40px;
-    color: #2B2B2B;
-    font-weight: 300;
-  }
+.carouselCardTitle {
+  font-size: 40px;
+  color: #2B2B2B;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.carouselCardDate {
+  font-size: 20px;
+  color: #515151;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
 
     
   

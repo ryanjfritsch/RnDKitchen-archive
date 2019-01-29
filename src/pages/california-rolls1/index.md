@@ -1,5 +1,5 @@
 ---
-title: "California Rolls"
+title: "Sushi - California Rolls"
 description: This post is related to the gatsbyjs
 difficulty: 'Easy'
 date: '2019-01-20'

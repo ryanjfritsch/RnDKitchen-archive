@@ -18,13 +18,20 @@ export default class Carousel extends Component {
 
       }
 
+      UNSAFE_componentWillReceiveProps(props) {
+        this.setState({ 
+            stars: props.rating,
+            blanks: 5 - props.rating
+        });
+      }
+
     render() {
 
         var stars = [];
         var blanks = [];
 
-        for (var i = 0; i < this.state.stars; i++) { stars.push(<img className="starIcon" src={orangeStar}></img>); }
-        for (var i = 0; i < this.state.blanks; i++) { stars.push(<img className="starIcon" src={blankStar}></img>); }
+        for (var i = 0; i < this.state.stars; i++) { stars.push(<img className="starIcon" src={orangeStar} alt=""></img>); }
+        for (var j = 0; j < this.state.blanks; j++) { stars.push(<img className="starIcon" src={blankStar} alt=""></img>); }
     
         return (
             <div>

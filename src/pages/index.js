@@ -38,6 +38,7 @@ export const listQuery = graphql`
             date(formatString: "MMMM Do YYYY")
             title
             shortName
+            rating
             image {
               childImageSharp {
                   fixed(width: 330, height: 330) {

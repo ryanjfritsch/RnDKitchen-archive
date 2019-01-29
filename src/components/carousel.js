@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import Img from 'gatsby-image';
 
 import './carousel.css';
+import StarRating from './starsRating.js'
 
 export default class Carousel extends Component {
 
@@ -111,7 +112,9 @@ render() {
             </div>
 
             <div id="card">
-                <span className="cardTitle">{this.state.currentMealShowing.frontmatter.title}</span>
+                <span className="carouselCardTitle">{this.state.currentMealShowing.frontmatter.title}</span>
+                <span className="carouselCardDate">{this.state.currentMealShowing.frontmatter.date}</span>
+                <StarRating rating={ this.state.currentMealShowing.frontmatter.rating }></StarRating>
                 <p className="foodInformation"></p>
             </div>
 
