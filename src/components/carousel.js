@@ -97,25 +97,31 @@ render() {
 
     return (
         <div id="rotatingFoodWrapper" style={{ zoom: this.state.scaleRatio }}>
+            {/* <span id="recentMealsText">Recent Meals</span> */}
 
-        <div id="tableWrapper">
-            <div id="table">
-                <div id="tableItemWrap1" className="tableItemWrapper">
-                    <img id="tableItem1" className="tableItemImg" src={meal1Image} alt="" />
-                </div>
-                <div id="tableItemWrap2" className="tableItemWrapper">
-                    <img id="tableItem2" className="tableItemImg" src={meal2Image} alt="" />
+            <div id="tableWrapper">
+                <div id="table">
+                    <div id="tableItemWrap1" className="tableItemWrapper">
+                        <img id="tableItem1" className="tableItemImg" src={meal1Image} alt="" />
+                    </div>
+                    <div id="tableItemWrap2" className="tableItemWrapper">
+                        <img id="tableItem2" className="tableItemImg" src={meal2Image} alt="" />
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="card">
-          {/* <span className="cardTitle">{this.state.currentMealShowing.frontmatter.title}</span> */}
-          <span className="cardTitle">{this.state.currentMealShowing.frontmatter.title}</span>
-          <p className="foodInformation"></p>
-        </div>
+            <div id="card">
+                <span className="cardTitle">{this.state.currentMealShowing.frontmatter.title}</span>
+                <p className="foodInformation"></p>
+            </div>
 
-      </div>
+            <div id="carouselProgress">
+                <div id="cProg1" className="cProgBar"></div>
+                <div id="cProg2" className="cProgBar"></div>
+                <div id="cProg3" className="cProgBar"></div>
+            </div>
+
+        </div>
     );
   }
 }

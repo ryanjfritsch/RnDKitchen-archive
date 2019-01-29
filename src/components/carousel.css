@@ -25,6 +25,20 @@
     100%   { opacity: 1; visibility: visible; }
   }
   
+
+  #recentMealsText {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    padding: 0 10px;
+    display: inline;
+    font-size: 20px;
+    background-color: #FBFBFA;
+    color: #2B2B2B;
+    opacity: 0.3;
+    font-family: 'PT Serif', sans-serif;
+    /* font-family:  */
+  }
   
   
   #tableWrapper {
@@ -177,7 +191,84 @@
 
     
   
-  #landingBottom {
-    width: 100%;
-    height: 300px;
-  }
+#carouselProgress {
+  width: 200px;
+  height: 8px;
+  position: relative;
+  top: -1005px;
+  left: calc(50% - 100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+
+.cProgBar {
+  height: 100%;
+  width: 50px;
+  background-color: #FBFBFA;
+}
+
+#cProg1 {
+  animation-name: progressFade1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+#cProg2 {
+  animation-name: progressFade2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+#cProg3 {
+  animation-name: progressFade3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+@keyframes progressFade1 {
+  0%  { opacity: 0.3; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0.3; }
+  50% { opacity: 0.3; }
+  60% { opacity: 0.3; }
+  70% { opacity: 0.3; }
+  80% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes progressFade2 {
+  0%  { opacity: 0.3; }
+  10% { opacity: 0.3; }
+  20% { opacity: 0.3; }
+  30% { opacity: 0.3; }
+  40% { opacity: 1; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 1; }
+  80% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes progressFade3 {
+  0%  { opacity: 0.3; }
+  10% { opacity: 0.3; }
+  20% { opacity: 0.3; }
+  30% { opacity: 0.3; }
+  40% { opacity: 0.3; }
+  50% { opacity: 0.3; }
+  60% { opacity: 0.3; }
+  70% { opacity: 0.3; }
+  80% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
+}

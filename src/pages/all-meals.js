@@ -5,7 +5,9 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
-import '../components/meal-card.css'
+import StarsRating from '../components/starsRating.js'
+
+import './meal-card.css'
 
 
 const AllMealsPage = (props) => {
@@ -18,16 +20,19 @@ const AllMealsPage = (props) => {
           <div className="mealListContainer">
             {mealList.edges.map(({ node }, i) => (
                 <Link to={node.fields.slug} className="link">
+                    
                     <div className="mealCard">
-                      <h1>{node.frontmatter.title}</h1>
-                      <Img fixed={mealList.edges[i].node.frontmatter.image.childImageSharp.fixed} />
-                      <span>{node.frontmatter.date}</span>
-                      <p>{node.excerpt}</p>
+                      <Img fixed={mealList.edges[i].node.frontmatter.image.childImageSharp.fixed} style={{ marginBottom: '28px' }}/>
+                      <span className="mealCardTitle">{node.frontmatter.title}</span>
+                      <span className="mealCardDate">{node.frontmatter.date}</span>
+                      <StarsRating rating={ node.frontmatter.rating }></StarsRating>
                     </div>
+
                 </Link>
             ))}
           </div>
         </div>
+        <div id="mealListFooter" style={{ height: '100px', width: '100%' }}></div>
       </Layout>
     )
 
@@ -47,12 +52,10 @@ export const mealQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
+            rating
             image {
               childImageSharp {
-                  resize(width: 50, height: 50) {
-                      src
-                  }
-                  fixed(width: 100, height: 100) {
+                  fixed(width: 270, height: 270) {
                     ...GatsbyImageSharpFixed
                   }
                   fluid(maxWidth: 700) {

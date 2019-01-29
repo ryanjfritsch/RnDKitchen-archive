@@ -1,12 +1,12 @@
 ---
-title: "California Rolls"
+title: "Hot Ones Chicken Wings"
 description: This post is related to the gatsbyjs
 difficulty: 'Easy'
-date: '2019-01-20'
-rating: 3
-shortName: 'californiaRoll'
+date: '2019-01-26'
+rating: 5
+shortName: 'wingsNoBottles'
 prepTime: '30 minutes'
-image: californiaRoll.png
+image: wingsBottles.png
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

@@ -33,11 +33,42 @@
 .mealCard {
     background-color: white;
     width: 300px;
-    height: 400px;
+    height: 600px;
     cursor: pointer;
     margin: 10px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
 }
 
 .link {
     cursor: default;
+    text-decoration: none;
+}
+
+.mealCardTitle {
+    font-family: 'PT Serif', sans-serif;
+    color: #2B2B2B;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    height: 65px;
+}
+
+.mealCardDate {
+    font-size: 18px;
+    font-family: 'PT Serif', sans-serif;
+    color: #515151;
+    margin-bottom: 15px;
+}
+
+#starsWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 140px;
+    height: 30px;
+    outline: 1px solid black;
 }
