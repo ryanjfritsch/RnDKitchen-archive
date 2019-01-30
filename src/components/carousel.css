@@ -149,8 +149,6 @@
     left: 770px;
     top: -1045px;
     background-color: #FBFBFA;
-    display: flex;
-    flex-direction: column;
     font-family: 'PT Serif', sans-serif;
     animation-name: menuSlide;
     animation-timing-function: ease-in-out;
@@ -182,7 +180,89 @@
     95%   { transform: translate(0px, 0px); }
     100%   { transform: translate(0px, 0px); }
   }
+
+
+.cardContainer {
+  position: absolute;
+  box-sizing: border-box;
+  width: 500px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+}
   
+#cardContainer1 {
+  animation-name: cardContainerFade1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+  transition: 0s all;
+}
+
+#cardContainer2 {
+  animation-name: cardContainerFade2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transition: 0s all;
+}
+
+#cardContainer3 {
+  animation-name: cardContainerFade3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transition: 0s all;
+}
+
+@keyframes cardContainerFade1 {
+  0%  { opacity: 0; }
+  15% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 1; }
+  38% { opacity: 1; }
+  39% { opacity: 0; }
+  50% { opacity: 0; }
+  60% { opacity: 0; }
+  70% { opacity: 0; }
+  80% { opacity: 0; }
+  90% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes cardContainerFade2 {
+  0%  { opacity: 0; }
+  10% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: 0; }
+  39% { opacity: 0; }
+  40% { opacity: 1; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  67% { opacity: 1; }
+  68% { opacity: 0; }
+  80% { opacity: 0; }
+  90% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes cardContainerFade3 {
+  0%  { opacity: 0; }
+  10% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 0; }
+  60% { opacity: 0; }
+  70% { opacity: 0; }
+  71% { opacity: 1; }
+  80% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+
+
 .carouselCardTitle {
   font-size: 40px;
   color: #2B2B2B;
@@ -198,6 +278,13 @@
 }
 
     
+
+
+
+
+
+
+
   
 #carouselProgress {
   width: 200px;
@@ -210,7 +297,6 @@
   justify-content: space-between;
   opacity: 0.8;
 }
-
 
 .cProgBar {
   height: 100%;

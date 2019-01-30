@@ -51,7 +51,7 @@ export default class Carousel extends Component {
       }
 
       updateCarouselCard(currentMeal) {
-        this.interval = setTimeout(() => {
+        // this.interval = setTimeout(() => {
             if(currentMeal === 1){
                 this.setState({ currentMealShowing: this.state.meal1 })
             }
@@ -61,21 +61,21 @@ export default class Carousel extends Component {
             else if(currentMeal === 3){
                 this.setState({ currentMealShowing: this.state.meal3 })
             }
-        }, 50);
+        // }, 50);
       }
 
       updateCarouselTable(mealNum) {
         this.interval = setTimeout(() => {
             if(this.state.changeTableSpot === 1){
-                if(mealNum === 1){ this.setState({ mealPic1: this.state.meal1 }) }
-                else if(mealNum === 2){ this.setState({ mealPic1: this.state.meal2 })}
-                else if(mealNum === 3){ this.setState({ mealPic1: this.state.meal3 })}
+                     if(mealNum === 1){ this.setState({ mealPic1: this.state.meal1 }) }
+                else if(mealNum === 2){ this.setState({ mealPic1: this.state.meal2 }) }
+                else if(mealNum === 3){ this.setState({ mealPic1: this.state.meal3 }) }
                 this.setState({ changeTableSpot: 2 })
             } 
             else if(this.state.changeTableSpot === 2){
-                if(mealNum === 1){ this.setState({ mealPic2: this.state.meal1 }) }
-                else if(mealNum === 2){ this.setState({ mealPic2: this.state.meal2 })}
-                else if(mealNum === 3){ this.setState({ mealPic2: this.state.meal3 })}
+                     if(mealNum === 1){ this.setState({ mealPic2: this.state.meal1 }) }
+                else if(mealNum === 2){ this.setState({ mealPic2: this.state.meal2 }) }
+                else if(mealNum === 3){ this.setState({ mealPic2: this.state.meal3 }) }
                 this.setState({ changeTableSpot: 1 })
             }
         }, 1000);
@@ -112,10 +112,24 @@ render() {
             </div>
 
             <div id="card">
-                <span className="carouselCardTitle">{this.state.currentMealShowing.frontmatter.title}</span>
-                <span className="carouselCardDate">{this.state.currentMealShowing.frontmatter.date}</span>
-                <StarRating rating={ this.state.currentMealShowing.frontmatter.rating }></StarRating>
-                <p className="foodInformation"></p>
+                <div className="cardContainer" id="cardContainer1">
+                    <span className="carouselCardTitle">{this.state.meal1.frontmatter.title}</span>
+                    <span className="carouselCardDate">{this.state.meal1.frontmatter.date}</span>
+                    <StarRating rating={ this.state.meal1.frontmatter.rating }></StarRating>
+                    <p className="foodInformation"></p>
+                </div>
+                <div className="cardContainer" id="cardContainer2">
+                    <span className="carouselCardTitle">{this.state.meal2.frontmatter.title}</span>
+                    <span className="carouselCardDate">{this.state.meal2.frontmatter.date}</span>
+                    <StarRating rating={ this.state.meal2.frontmatter.rating }></StarRating>
+                    <p className="foodInformation"></p>
+                </div>
+                <div className="cardContainer" id="cardContainer3">
+                    <span className="carouselCardTitle">{this.state.meal3.frontmatter.title}</span>
+                    <span className="carouselCardDate">{this.state.meal3.frontmatter.date}</span>
+                    <StarRating rating={ this.state.meal3.frontmatter.rating }></StarRating>
+                    <p className="foodInformation"></p>
+                </div>
             </div>
 
             <div id="carouselProgress">
