@@ -279,7 +279,6 @@
 
 
 .foodInformation {
-  outline: 1px solid blue;
   height: 100%;
   box-sizing: border-box;
   margin: 20px 0;
@@ -291,11 +290,22 @@
 .foodInfoItem {
   width: 50%;
   height: 50%;
-  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.foodInfoItem img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.foodInfoItem span {
+  font-size: 30px;
+  color: #2B2B2B;
+}
 
 
 

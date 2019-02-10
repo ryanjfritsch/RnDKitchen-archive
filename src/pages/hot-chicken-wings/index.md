@@ -1,11 +1,13 @@
 ---
 title: "Hot Ones Chicken Wings"
 description: This post is related to the gatsbyjs
+prepTime: '1.5 hours'
+ingredientCount: '4  ingredients'
 difficulty: 'Easy'
+heatLevel: 'Very hot'
 date: '2019-01-26'
 rating: 5
 shortName: 'wingsNoBottles'
-prepTime: '30 minutes'
 image: hotWingsHeader.png
 stepbysteprecipe: '- Step 1
 - Step 2

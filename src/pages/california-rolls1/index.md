@@ -1,11 +1,13 @@
 ---
 title: "Sushi - California Rolls"
 description: This post is related to the gatsbyjs
-difficulty: 'Easy'
+prepTime: '1.5 hours'
+ingredientCount: '6  ingredients'
+difficulty: 'Intermediate'
+heatLevel: 'None'
 date: '2019-01-20'
 rating: 3
 shortName: 'californiaRoll'
-prepTime: '30 minutes'
 image: californiaRollHeader.png
 stepbysteprecipe: "This is a classic California sushi roll recipe. Doesn't get much easier than this in terms of making sushi. Some folks might not even consider it legitimate sushi because it doesn't contain real fish, but because it was my first attempt at making sushi, I'm gonna count it. Making these rolls gave me a new appreciation for professional sushi chefs. It is very difficult to get the rice to do what you want it to, and shape it perfectly to both look good and keep the contents inside the roll. There were also a few things I didn't include in the preparation that could have given the rolls more flavor, like adding rice vinegar after cooking the rice. Overall, I was happy with the way the rolls turned out."
 ---

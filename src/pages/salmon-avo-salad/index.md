@@ -1,11 +1,13 @@
 ---
 title: "Salmon Avocado Salad"
 description: This post is related to the gatsbyjs
+prepTime: '30 minutes'
+ingredientCount: '8  ingredients'
 difficulty: 'Easy'
+heatLevel: 'None'
 date: '2019-01-05'
 rating: 4
 shortName: 'salmonSalad'
-prepTime: '30 minutes'
 image: salmonSaladHeader.png
 stepbysteprecipe: '- Step 1
 - Step 2

@@ -1,11 +1,13 @@
 ---
 title: "Italian Beef Sandwiches"
 description: This post is related to the gatsbyjs
+prepTime: '7 hours'
+ingredientCount: '3  ingredients'
 difficulty: 'Easy'
+heatLevel: 'Mild'
 date: '2019-01-13'
 rating: 4
 shortName: 'italianBeef'
-prepTime: '30 minutes'
 image: italianBeefHeader.png
 stepbysteprecipe: '- Step 1
 - Step 2

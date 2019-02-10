@@ -39,6 +39,10 @@ export const listQuery = graphql`
             title
             shortName
             rating
+            prepTime
+            ingredientCount
+            difficulty
+            heatLevel
             image {
               childImageSharp {
                   fixed(width: 330, height: 330) {
