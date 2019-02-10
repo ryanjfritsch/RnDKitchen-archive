@@ -277,8 +277,24 @@
   margin-bottom: 15px;
 }
 
-    
 
+.foodInformation {
+  outline: 1px solid blue;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foodInfoItem {
+  width: 50%;
+  height: 50%;
+  outline: 1px solid red;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

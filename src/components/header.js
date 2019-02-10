@@ -22,8 +22,8 @@ const Header = ({ siteTitle }) => (
             className="headerNav"
             activeClassName="headerNav"
             activeStyle={{ color: '#E8E8EB', cursor: 'default' }}
-            >All Meals</Link>
-          <span className="headerNav">Calendar</span>
+            >All Recipes</Link>
+          {/* <span className="headerNav">Calendar</span> */}
           <span className="headerNav navLast">About</span>
       </div>
     </div>

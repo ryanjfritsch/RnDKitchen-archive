@@ -116,19 +116,34 @@ render() {
                     <span className="carouselCardTitle">{this.state.meal1.frontmatter.title}</span>
                     <span className="carouselCardDate">{this.state.meal1.frontmatter.date}</span>
                     <StarRating rating={ this.state.meal1.frontmatter.rating }></StarRating>
-                    <p className="foodInformation"></p>
+                    <div className="foodInformation">
+                        <div className="foodInfoItem"><span>TIME</span></div>
+                        <div className="foodInfoItem"><span>DIFFICULTY</span></div>
+                        <div className="foodInfoItem"><span>INGREDIENT COUNT</span></div>
+                        <div className="foodInfoItem"><span>SPICE</span></div>
+                    </div>
                 </div>
                 <div className="cardContainer" id="cardContainer2">
                     <span className="carouselCardTitle">{this.state.meal2.frontmatter.title}</span>
                     <span className="carouselCardDate">{this.state.meal2.frontmatter.date}</span>
                     <StarRating rating={ this.state.meal2.frontmatter.rating }></StarRating>
-                    <p className="foodInformation"></p>
+                    <div className="foodInformation">
+                        <div className="foodInfoItem"><span>TIME</span></div>
+                        <div className="foodInfoItem"><span>DIFFICULTY</span></div>
+                        <div className="foodInfoItem"><span>INGREDIENT COUNT</span></div>
+                        <div className="foodInfoItem"><span>SPICE</span></div>
+                    </div>
                 </div>
                 <div className="cardContainer" id="cardContainer3">
                     <span className="carouselCardTitle">{this.state.meal3.frontmatter.title}</span>
                     <span className="carouselCardDate">{this.state.meal3.frontmatter.date}</span>
                     <StarRating rating={ this.state.meal3.frontmatter.rating }></StarRating>
-                    <p className="foodInformation"></p>
+                    <div className="foodInformation">
+                        <div className="foodInfoItem"><span>TIME</span></div>
+                        <div className="foodInfoItem"><span>DIFFICULTY</span></div>
+                        <div className="foodInfoItem"><span>INGREDIENT COUNT</span></div>
+                        <div className="foodInfoItem"><span>SPICE</span></div>
+                    </div>
                 </div>
             </div>
 

@@ -7,6 +7,9 @@ rating: 4
 shortName: 'salmonSalad'
 prepTime: '30 minutes'
 image: salmonSaladHeader.png
+stepbysteprecipe: '- Step 1
+- Step 2
+- Step 3'
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
