@@ -19,6 +19,15 @@
     animation-fill-mode: forwards;
     visibility: hidden;
   }
+
+@media only screen and (max-width: 700px) {
+  #rotatingFoodWrapper {
+    height: 1350px;
+    width: 750px;
+    background-position-x: -430px;
+    background-size: 350%;
+  }
+}
   
   @keyframes fadeInCarousel {
     0%   { opacity: 0; visibility: visible; }
@@ -51,6 +60,13 @@
     zoom: 1.1;
     z-index: 1;
   }
+
+  @media only screen and (max-width: 700px) {
+    #tableWrapper {
+      top: 430px;
+      zoom: 1.15;
+    }
+  }
   
   #table {
     width: 100%;
@@ -66,6 +82,12 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     transform-style: preserve-3d;
+  }
+
+  @media only screen and (max-width: 700px) {
+    #table {
+      
+    }
   }
   
   html {
@@ -155,6 +177,13 @@
     animation-iteration-count: infinite;
     animation-duration: 10s;
     animation-delay: 5s;
+  }
+
+  @media only screen and (max-width: 700px) {
+    #card {
+      left: 100px;
+      top: -1095px;
+    }
   }
   
   @keyframes menuSlide {
@@ -297,7 +326,7 @@
 }
 
 .foodInfoItem img {
-  width: 70px;
+  width: 60px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -391,4 +420,12 @@
   80% { opacity: 1; }
   90% { opacity: 1; }
   100% { opacity: 1; }
+}
+
+
+@media only screen and (max-width: 700px) {
+  #carouselProgress {
+    top: -430px;
+    left: 280px;
+  }
 }

@@ -86,9 +86,13 @@ export default class Carousel extends Component {
         clearInterval(this.interval);
       }
       
-      updateWindowDimensions() {
-        this.setState({ scaleRatio: window.innerWidth/1360 });
-      }
+    updateWindowDimensions() {
+        if(window.innerWidth > 700){
+            this.setState({ scaleRatio: window.innerWidth/1360 });
+        } else { 
+            this.setState({ scaleRatio: window.innerWidth/750 });
+        }
+    }
 
   
 
@@ -154,7 +158,7 @@ render() {
                         </div>
                         <div className="foodInfoItem">
                             <img src={require("../images/flame.png")} alt=""></img>
-                            <span>{this.state.meal3.frontmatter.heatLevel}</span>
+                            <span>{this.state.meal2.frontmatter.heatLevel}</span>
                         </div>
                     </div>
                 </div>
