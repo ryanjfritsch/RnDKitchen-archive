@@ -33,10 +33,14 @@
 
 .recipeInstructions {
     background-color: white;
-    padding: 20px;
+    padding: 20px 30px 20px 20px;
     margin-top: 20px;
     box-sizing: border-box;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, .10);
+}
+
+.recipeSourceHidden {
+    display: none;
 }
 
 

@@ -9,9 +9,9 @@ date: '2019-01-13'
 rating: 4
 shortName: 'italianBeef'
 image: italianBeefHeader.png
-stepbysteprecipe: '- Step 1
-- Step 2
-- Step 3'
+recipeIntroParagraph: '- Step 1 - Step 2 - Step 3'
+sourceLink: ''
+sourceWebsite: ''
 ---
 Don't build a website with last decade's tech. The future of the web is mobile,
  JavaScript and APIs—the

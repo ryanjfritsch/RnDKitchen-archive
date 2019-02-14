@@ -8,3 +8,7 @@
 .post-list:hover {
     transform: scale(1.01);
 }
+
+.cookingInstrucitonsOL li {
+    margin: 5px;
+}

@@ -12,8 +12,13 @@ function BlogPost(props) {
 
     const post = props.data.markdownRemark;
     const { title } = post.frontmatter;
-    const { stepbysteprecipe } = post.frontmatter;
+    const { recipeIntroParagraph } = post.frontmatter;
     const { rating } = post.frontmatter;
+    const { sourceLink } = post.frontmatter;
+    const { sourceWebsite } = post.frontmatter;
+
+    var sourceClass = "";
+    if(sourceLink === ''){ sourceClass = "recipeSourceHidden" }
 
     return (
         <Layout>
@@ -23,7 +28,8 @@ function BlogPost(props) {
                     <div className="recipeTextInfo">
                         <h1>{title}</h1>
                         <StarRating rating={ rating }></StarRating>
-                        <p className="recipeSummary">{stepbysteprecipe}</p>
+                        <p className="recipeSummary">{recipeIntroParagraph}</p>
+                        <div className={sourceClass}>Source: <a target="_blank" rel="noopener noreferrer" href={sourceLink}>{sourceWebsite}</a></div>
                     </div>
                     <div className="recipeImageWrapper">
                         <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
@@ -47,7 +53,9 @@ export const query = graphql`
                 title
                 description
                 rating
-                stepbysteprecipe
+                recipeIntroParagraph
+                sourceLink
+                sourceWebsite
                 image {
                     childImageSharp {
                         resize(width: 50, height: 50) {
