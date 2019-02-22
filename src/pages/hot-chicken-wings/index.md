@@ -9,7 +9,7 @@ date: '2019-01-26'
 rating: 5
 shortName: 'wingsNoBottles'
 image: hotWingsHeader.png
-recipeIntroParagraph: "This is a classic California sushi roll recipe. Doesn't get much easier than this in terms of making sushi. Some folks might not even consider it legitimate sushi because it doesn't contain real fish, but because it was my first attempt at making sushi, I'm gonna count it. Making these rolls gave me a new appreciation for professional sushi chefs. It is very difficult to get the rice to do what you want it to, and shape it perfectly to both look good and keep the contents inside the roll. There were also a few things I didn't include in the preparation that could have given the rolls more flavor, like adding rice vinegar after cooking the rice. Overall, I was happy with the way the rolls turned out."
+recipeIntroParagraph: "The inspiration behind trying chicken wings with hot sauce is a series on YouTube called 'Hot Ones', which is created by First We Feast. On the show, celebrities are interviewed while eating increasingly hot wings. I enjoy watching the show and seeing how the guests handle the heat of the sauces. I wanted to see how I would handle the heat as well, and decided to order 3 of the sauces that are currently being used on the show. Two of them (The Classic and Los Calientes, listed below in ingredients) are made by the company that creates the show, and one is made by a hot sauce company. The listed 'Scoville' rating is the chemical rating of how hot a food item is. You can see the most mild sauce is only 1,800 scoville. For reference, sriracha is 2,000 Scoville. Eat the other sauces at your own risk. I used a generic oven-baked wings recipe from Food Wishes, which is also listed below. I was very happy with how the wings turned out; they came out crispier than expected, and held onto the hot sauce very well."
 sourceLink: 'https://foodwishes.blogspot.com/2015/01/crispy-honey-sriracha-chicken-wings.html'
 sourceWebsite: 'Food Wishes (sriracha sauce in recipe not used)'
 ---
@@ -38,14 +38,14 @@ sourceWebsite: 'Food Wishes (sriracha sauce in recipe not used)'
     </li>
 </ul>
 
-<h1>Cooking Equipment</h1>
+<h1 style="color: #2B2B2B;">Cooking Equipment</h1>
 <ul style="font-size: 20px; margin: 0 0 50px 0;">
     <li style="margin: 5px 0;">Raised-edge baking sheet</li>
     <li style="margin: 5px 0;">Baking rack</li>
     <li style="margin: 5px 0;">Tin foil</li>
 </ul>
 
-<h1>Cooking Instructions</h1>
+<h1 style="color: #2B2B2B;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">Heat oven to 425°F.</li>
     <li style="margin: 5px 0;">Break down your chicken wings into flats and drums (search YouTube for instructions on this). Place wings in a large bowl.</li>

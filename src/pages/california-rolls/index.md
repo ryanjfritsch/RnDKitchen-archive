@@ -29,12 +29,12 @@ sourceWebsite: ''
     <li>4 half sheets sushi grade nori</li>
 </ul>
 
-<h1>Cooking Equipment</h1>
+<h1 style="color: #2B2B2B;">Cooking Equipment</h1>
 <ul style="font-size: 20px; margin: 0 0 50px 0;">
     <li style="margin: 5px 0;">Bamboo sushi roller</li>
 </ul>
 
-<h1>Cooking Instructions</h1>
+<h1 style="color: #2B2B2B;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">Wash the rice in a large bowl of water. Empty the bowl through a strainer every few minutes so the rice is saved. You will start to notice the water in the bowl becoming increasingly clearer each time the water is changed. Repeat this until the water is mostly clear.</li>
     <li style="margin: 5px 0;">Cook the rice in a medium pot. Use the instructions listed on the bag/box of the rice for guidance.</li>

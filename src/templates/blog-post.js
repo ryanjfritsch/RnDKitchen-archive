@@ -17,7 +17,7 @@ function BlogPost(props) {
     const { sourceLink } = post.frontmatter;
     const { sourceWebsite } = post.frontmatter;
 
-    var sourceClass = "";
+    var sourceClass = "recipeSourceLink";
     if(sourceLink === ''){ sourceClass = "recipeSourceHidden" }
 
     return (
