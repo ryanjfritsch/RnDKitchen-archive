@@ -2,8 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-
 import Carousel from '../components/carousel';
+
+import './aboutBlock.css';
+
+import rndLogo from '../images/circleLogoMD.png'
 
 const IndexPage = (props) => {
 
@@ -14,8 +17,16 @@ const IndexPage = (props) => {
     return (
       <Layout title="R&D Kitchen">
         <Carousel mealData={recentMealsList}></Carousel>
-        <div style={{ width: '100%', height: '500px' }}>
-          <h4>About RnD Kitchen</h4>
+        <div className="aboutContainer">
+          <div className="aboutBlock">
+            <span className="aboutTitle">About R&D Kitchen</span>
+            <div className="logoAndText">
+              <img className="rndLogo" src={rndLogo} alt=""></img>
+              <div className="aboutParagraph">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              </div>
+            </div>
+          </div>
         </div>
       </Layout>
     )
