@@ -9,7 +9,7 @@ date: '2019-02-20'
 rating: 4
 shortName: 'chickenStuffedAvocado'
 image: chickenStuffedAvocadoHeader.png
-recipeIntroParagraph: 'Steps'
+recipeIntroParagraph: "One of the major reasons I created this website was to branch out and stop eating chicken for a majority of my meals. I've done a good job with that so far, but I'm sure it will make its way back into a recipe I make every once in a while. This meal was pretty simple to make, and turned out to be a lot heavier than expected, most likely because of all the cheese. If I make this again, I will use the recommended amount of cheese rather than adding more 'for taste'. That being said, when you get a bite of equal amounts of chicken mix and straight avocado, it really is a fantastic taste."
 sourceLink: 'https://www.allrecipes.com/recipe/245863/chicken-stuffed-baked-avocados/?internalSource=popular&referringContentType=Homepage'
 sourceWebsite: 'All Recipes'
 flair: ''

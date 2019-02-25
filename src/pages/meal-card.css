@@ -3,7 +3,7 @@
     max-width: 1200px;
     padding-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     margin: auto;
@@ -14,6 +14,17 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+}
+
+.allRecipesTitle {
+    font-size: 35px;
+    font-family: 'PT Serif', sans-serif;
+}
+
+.allRecipesTitleDetail {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: 'PT Serif', sans-serif;
 }
 
 

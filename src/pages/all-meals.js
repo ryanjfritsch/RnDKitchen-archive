@@ -19,6 +19,8 @@ const AllMealsPage = (props) => {
       <DocumentTitle title="All Recipes">
         <Layout>
           <div className="mealListWrapper">
+            <div className="allRecipesTitle">All Recipes</div>
+            <div className="allRecipesTitleDetail">(most recent shown first)</div>
             <div className="mealListContainer">
               {mealList.edges.map(({ node }, i) => (
                   <Link to={node.fields.slug} className="link">
