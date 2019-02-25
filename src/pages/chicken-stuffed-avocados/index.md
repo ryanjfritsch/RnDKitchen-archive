@@ -12,6 +12,7 @@ image: chickenStuffedAvocadoHeader.png
 recipeIntroParagraph: 'Steps'
 sourceLink: 'https://www.allrecipes.com/recipe/245863/chicken-stuffed-baked-avocados/?internalSource=popular&referringContentType=Homepage'
 sourceWebsite: 'All Recipes'
+flair: ''
 ---
 <h1 style="color: #2B2B2B;">Ingredients</h1>
 

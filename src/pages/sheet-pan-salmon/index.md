@@ -12,6 +12,7 @@ image: sheetPanSalmonHeader.png
 recipeIntroParagraph: '"Not only does this simple salmon and veggie dinner come together on one sheet pan, it keeps your shopping list short—a double win! The key to making this recipe work is the timing. Starting the potatoes off first allows them to get a head start, instead of overcooking the salmon or fussy steps. Got leftovers? Flake the salmon and chop the vegetables into bite-size pieces. Then, toss with greens for a healthy lunch, or pile over warm grains for a heartier alternative. Shopping tip: Look for salmon fillets that all have the same thickness, which will help them to cook evenly." (from source website)'
 sourceLink: 'https://www.realsimple.com/food-recipes/browse-all-recipes/sheet-pan-salmon-with-potatoes-and-broccolini'
 sourceWebsite: 'Real Simple'
+flair: ''
 ---
 <h1 style="color: #2B2B2B;">Ingredients</h1>
 

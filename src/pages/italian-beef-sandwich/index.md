@@ -12,6 +12,7 @@ image: italianBeefHeader.png
 recipeIntroParagraph: 'Steps'
 sourceLink: 'https://www.allrecipes.com/recipe/91597/original-homemade-italian-beef/?internalSource=streams&referringId=1201&referringContentType=Recipe%20Hub&clickId=st_trending_b'
 sourceWebsite: 'All Recipes'
+flair: ''
 ---
 <h1 style="color: #2B2B2B;">Ingredients</h1>
 

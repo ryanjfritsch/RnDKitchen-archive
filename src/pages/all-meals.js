@@ -57,6 +57,7 @@ export const mealQuery = graphql`
             date(formatString: "MMMM Do YYYY")
             title
             rating
+            flair
             image {
               childImageSharp {
                   fixed(width: 300, height: 300) {
