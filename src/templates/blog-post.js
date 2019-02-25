@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image';
+import DocumentTitle from 'react-document-title'
 
 import StarRating from '../components/starsRating.js'
 
@@ -23,24 +24,26 @@ function BlogPost(props) {
     document.title = title
 
     return (
-        <Layout>
-            <div className="recipePage">
-                
-                <div className="recipeHeader">
-                    <div className="recipeTextInfo">
-                        <h1>{title}</h1>
-                        <StarRating rating={ rating }></StarRating>
-                        <p className="recipeSummary">{recipeIntroParagraph}</p>
-                        <div className={sourceClass}>Source: <a target="_blank" rel="noopener noreferrer" href={sourceLink}>{sourceWebsite}</a></div>
-                    </div>
-                    <div className="recipeImageWrapper">
-                        <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-                    </div>
+        <DocumentTitle title={ title }>
+            <Layout>
+                <div className="recipePage">
                     
+                    <div className="recipeHeader">
+                        <div className="recipeTextInfo">
+                            <h1>{title}</h1>
+                            <StarRating rating={ rating }></StarRating>
+                            <p className="recipeSummary">{recipeIntroParagraph}</p>
+                            <div className={sourceClass}>Source: <a target="_blank" rel="noopener noreferrer" href={sourceLink}>{sourceWebsite}</a></div>
+                        </div>
+                        <div className="recipeImageWrapper">
+                            <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+                        </div>
+                        
+                    </div>
+                    <div className="recipeInstructions" dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
-                <div className="recipeInstructions" dangerouslySetInnerHTML={{ __html: post.html }} />
-            </div>
-        </Layout>
+            </Layout>
+        </DocumentTitle>
     )
 
 }
