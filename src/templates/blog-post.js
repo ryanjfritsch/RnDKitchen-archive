@@ -21,8 +21,6 @@ function BlogPost(props) {
     var sourceClass = "recipeSourceLink";
     if(sourceLink === ''){ sourceClass = "recipeSourceHidden" }
 
-    document.title = title
-
     return (
         <DocumentTitle title={ title }>
             <Layout>

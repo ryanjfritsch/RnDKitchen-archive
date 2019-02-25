@@ -13,8 +13,6 @@ import './meal-card.css'
 
 const AllMealsPage = (props) => {
 
-  document.title = "All Recipes"
-
   const mealList = props.data.allMarkdownRemark;
 
     return (
