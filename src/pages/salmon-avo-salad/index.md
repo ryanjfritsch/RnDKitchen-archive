@@ -32,7 +32,7 @@ flair: ''
     <li>Your favorite greens (optional)</li>
 </ul>
 
-<h1 style="color: #2B2B2B;">Cooking Instructions</h1>
+<h1 style="color: #2B2B2B; margin-top: 40px;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">In a large bowl, combine the salmon, cucumber, mayonnaise, onion, dill, mustard, salt, and lemon pepper and toss.</li>
     <li style="margin: 5px 0;">Gently fold in the avocado and grapefruit.</li>

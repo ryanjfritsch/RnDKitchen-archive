@@ -26,7 +26,7 @@ flair: ''
     <li>1 cup of water</li>
 </ul>
 
-<h1 style="color: #2B2B2B;">Cooking Equipment</h1>
+<h1 style="color: #2B2B2B;  margin-top: 40px;">Cooking Equipment</h1>
 <ul style="font-size: 20px; margin: 0 0 50px 0;">
     <li style="margin: 5px 0;">Slow cooker</li>
 </ul>

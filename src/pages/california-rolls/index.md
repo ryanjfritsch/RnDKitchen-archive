@@ -10,7 +10,7 @@ rating: 3
 shortName: 'californiaRoll'
 headerName: 'californiaRollHeader'
 image: californiaRollHeader.png
-recipeIntroParagraph: "This is a classic California sushi roll recipe. Doesn't get much easier than this in terms of making sushi. Some folks might not even consider it legitimate sushi because it doesn't contain real fish, but because it was my first attempt at making sushi, I'm gonna count it. Making these rolls gave me a new appreciation for professional sushi chefs. It is very difficult to get the rice to do what you want it to, and shape it perfectly to both look good and keep the contents inside the roll. There were also a few things I didn't include in the preparation that could have given the rolls more flavor, like adding rice vinegar after cooking the rice. Overall, I was happy with the way the rolls turned out."
+recipeIntroParagraph: "This is a classic California sushi roll recipe. Doesn't get much easier than this in terms of making sushi. Some people might not even consider it legitimate sushi because it doesn't contain real fish, but because it was my first sushi attempt, I'm gonna count it. Making these rolls gave me a new appreciation for professional sushi chefs. It is very difficult to get the rice to do what you want it to, and shape it perfectly to both look good and keep the contents inside the roll. There were also a few things I didn't include in the preparation that could have given the rolls more flavor, like adding rice vinegar after cooking the rice. Overall, I was happy with the way the rolls turned out."
 sourceLink: ''
 sourceWebsite: ''
 flair: ''
@@ -31,7 +31,7 @@ flair: ''
     <li>4 half sheets sushi grade nori</li>
 </ul>
 
-<h1 style="color: #2B2B2B;">Cooking Equipment</h1>
+<h1 style="color: #2B2B2B;  margin-top: 40px;">Cooking Equipment</h1>
 <ul style="font-size: 20px; margin: 0 0 50px 0;">
     <li style="margin: 5px 0;">Bamboo sushi roller</li>
 </ul>

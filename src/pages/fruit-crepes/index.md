@@ -31,7 +31,7 @@ flair: ''
     <li>Small bag of mini-chocolate chips</li>
 </ul>
 
-<h1 style="color: #2B2B2B;">Cooking Instructions</h1>
+<h1 style="color: #2B2B2B; margin-top: 40px;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">In a large mixing bowl, whisk together the flour and the eggs. </li>
     <li style="margin: 5px 0;">Gradually add in the milk and water, stirring to combine. Add the salt and butter; beat until smooth.</li>

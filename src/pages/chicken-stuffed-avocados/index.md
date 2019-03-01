@@ -34,7 +34,7 @@ flair: ''
     <li style="margin: 5px 0;">Slow cooker</li>
 </ul> -->
 
-<h1 style="color: #2B2B2B;">Cooking Instructions</h1>
+<h1 style="color: #2B2B2B; margin-top: 40px;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">Heat oven to 400°F</li>
     <li style="margin: 5px 0;">Scoop out some of the flesh in the center of each avocado, and place in a bowl.</li>
