@@ -97,8 +97,8 @@ export default class Carousel extends Component {
   
 
 render() {
-    const meal1Image = require('../images/'+this.state.mealPic1.frontmatter.shortName+'.png');
-    const meal2Image = require('../images/'+this.state.mealPic2.frontmatter.shortName+'.png');
+    const meal1Image = require('../images/carousel/'+this.state.mealPic1.frontmatter.shortName+'.png');
+    const meal2Image = require('../images/carousel/'+this.state.mealPic2.frontmatter.shortName+'.png');
 
     return (
         <div id="rotatingFoodWrapper" style={{ zoom: this.state.scaleRatio }}>

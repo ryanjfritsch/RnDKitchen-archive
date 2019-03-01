@@ -7,7 +7,8 @@ difficulty: 'Easy'
 heatLevel: 'Very hot'
 date: '2019-01-26'
 rating: 5
-shortName: 'wingsNoBottles'
+shortName: 'hotWings'
+headerName: 'hotWingsHeader'
 image: hotWingsHeader.png
 recipeIntroParagraph: "The inspiration behind trying chicken wings with hot sauce is a series on YouTube called 'Hot Ones', which is created by First We Feast. On the show, celebrities are interviewed while eating increasingly hot wings. I enjoy watching the show and seeing how the guests handle the heat of the sauces. I wanted to see how I would handle the heat as well, and decided to order 3 of the sauces that are currently being used on the show. Two of them (The Classic and Los Calientes, listed below in ingredients) are made by the company that creates the show, and one is made by a hot sauce company. The listed 'Scoville' rating is the chemical rating of how hot a food item is. You can see the most mild sauce is only 1,800 scoville. For reference, sriracha is 2,000 Scoville. Eat the other sauces at your own risk. I used a generic oven-baked wings recipe from Food Wishes, which is also listed below. I was very happy with how the wings turned out; they came out crispier than expected, and held onto the hot sauce very well."
 sourceLink: 'https://foodwishes.blogspot.com/2015/01/crispy-honey-sriracha-chicken-wings.html'

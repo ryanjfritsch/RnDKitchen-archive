@@ -8,6 +8,7 @@ heatLevel: 'None'
 date: '2019-02-23'
 rating: 5
 shortName: 'fruitCrepes'
+headerName: 'fruitCrepesHeader'
 image: fruitCrepesHeader.png
 recipeIntroParagraph: "This time, I decided to switch it up and try a breakfast recipe: some simple crepes with fruit and chocolate. I followed the crepe recipe from the All Recipes link posted below, and then added the fruit as shown in the picture. I also thought some mini chocolate chips under the fruit and melted chocolate on top of the crepe would make them taste even better. This receipe was fairly easy to setup, and didn't take too long to complete. The toughest part was making sure the crepe didn't burn on the skillet. Nutella, cinnamon, and/or powdered sugar can be added as well."
 sourceLink: 'https://www.allrecipes.com/recipe/16383/basic-crepes/?internalSource=hub%20recipe&referringContentType=Search'

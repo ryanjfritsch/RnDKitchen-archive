@@ -8,6 +8,7 @@ heatLevel: 'None'
 date: '2019-01-05'
 rating: 4
 shortName: 'salmonSalad'
+headerName: 'salmonSaladHeader'
 image: salmonSaladHeader.png
 recipeIntroParagraph: "''Step aside, tuna salad! We have a new friend in town: salmon salad. And she is amazing. I use canned salmon for this recipe to keep it convenient for lunches, but you can always substitute cooked fresh salmon.'' (from recipe source). This was the first recipe of the R&D Kitchen cookbook, and it was a very easy way to get started. All you have to do is cut up the ingredients and throw them into a large bowl. Doesn't get much easier than that."
 sourceLink: 'https://www.amazon.com/Whole-Smiths-Good-Food-Cookbook/dp/1328915093'

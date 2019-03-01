@@ -8,6 +8,7 @@ heatLevel: 'Mild'
 date: '2019-01-13'
 rating: 4
 shortName: 'italianBeef'
+headerName: 'italianBeefHeader'
 image: italianBeefHeader.png
 recipeIntroParagraph: 'This recipe is a great one to get started with a slow cooker. All you have to do is place the meat in the slow cooker, add the water and seasoning/dressing mix, and let it cook for 6 to 7 hours. Easy as that. The result was tender and great tasting pork that went great with peppercinis on hamburger buns. Definitely a simple but effective meal.'
 sourceLink: 'https://www.allrecipes.com/recipe/91597/original-homemade-italian-beef/?internalSource=streams&referringId=1201&referringContentType=Recipe%20Hub&clickId=st_trending_b'

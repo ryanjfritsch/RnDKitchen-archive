@@ -7,7 +7,7 @@ import orangeStar from '../images/orangeStar.png';
 import blankStar from '../images/blankStar.png';
 
 
-export default class Carousel extends Component {
+export default class StarsRating extends Component {
 
     constructor(props) {
         super();

@@ -1,41 +1,64 @@
-import React from 'react'
+import React, { Component } from 'react';
 import { Link } from 'gatsby'
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby'
 import DocumentTitle from 'react-document-title'
 
 import Layout from '../components/layout'
-
-import StarsRating from '../components/starsRating.js'
-
-import './meal-card.css'
+import MealCard from '../components/meal-card'
 
 
-const AllMealsPage = (props) => {
+import '../components/meal-card.css'
 
-  const mealList = props.data.allMarkdownRemark;
+
+export default class AllMealsPage extends Component {
+
+  constructor(props) {
+    super();
+    this.state = { 
+        mealList: props.data.allMarkdownRemark.edges,
+        updatedList: props.data.allMarkdownRemark.edges
+    };
+
+  }
+
+  componentDidMount() {
+    // this.setState({ updatedList: this.state.mealList })
+  }
+
+
+  filterList(event){
+
+    this.setState({ updatedList: this.state.mealList.filter(function({ node }, i){
+        return node.frontmatter.title.toLowerCase().search(event.target.value.toLowerCase()) !== -1
+      })
+    })
+    // console.log(this.state.updatedList)
+    
+  }
+
+
+
+
+
+  render() {
+
 
     return (
       <DocumentTitle title="All Recipes">
         <Layout>
           <div className="mealListWrapper">
-            <div className="allRecipesTitle">All Recipes</div>
-            <div className="allRecipesTitleDetail">(most recent shown first)</div>
+            {/* <div className="allRecipesTitle">All Recipes</div>
+            <div className="allRecipesTitleDetail">(most recent shown first)</div> */}
+            <input className="allRecipesSearchBar" type="text" placeholder="Search" onChange={this.filterList.bind(this)}/>
             <div className="mealListContainer">
-              {mealList.edges.map(({ node }, i) => (
+              {this.state.updatedList.map(({ node }, i) => (
                   <Link to={node.fields.slug} className="link">
-                      
-                      <div className="mealCard">
-                        <div>
-                          <Img fixed={mealList.edges[i].node.frontmatter.image.childImageSharp.fixed}/>
-                        </div>
-                        <div className="mealCardLowerHalf">
-                          <span className="mealCardTitle">{node.frontmatter.title}</span>
-                          <span className="mealCardDate">{node.frontmatter.date}</span>
-                          <StarsRating rating={ node.frontmatter.rating }></StarsRating>
-                        </div>
-                      </div>
-
+                      <MealCard 
+                        rating={ node.frontmatter.rating }
+                        imageName={ this.state.updatedList[i].node.frontmatter.headerName }
+                        title={ node.frontmatter.title }
+                        date={ node.frontmatter.date }
+                      ></MealCard>
                   </Link>
               ))}
             </div>
@@ -43,11 +66,10 @@ const AllMealsPage = (props) => {
           <div id="mealListFooter" style={{ height: '100px', width: '100%' }}></div>
         </Layout>
       </DocumentTitle>
-    )
+    );
+  }
 
 }
-
-export default AllMealsPage
 
 export const mealQuery = graphql`
   query MealQuery {
@@ -61,6 +83,8 @@ export const mealQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
+            shortName
+            headerName
             rating
             flair
             image {
