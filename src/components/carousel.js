@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby'
 // import Img from 'gatsby-image';
 
 import './carousel.css';
@@ -16,7 +17,8 @@ export default class Carousel extends Component {
             currentMealShowing: props.mealData[0].node,
             changeTableSpot: 1,
             mealPic1: props.mealData[0].node,
-            mealPic2: props.mealData[1].node
+            mealPic2: props.mealData[1].node,
+            currentLink: props.mealData[0].node.fields.slug
         };
 
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -28,6 +30,8 @@ export default class Carousel extends Component {
         window.addEventListener('resize', this.updateWindowDimensions);
 
         this.setState({ currentMealShowing: this.state.meal1 })
+
+        this.setState({ currentLink: this.state.meal1.fields.slug })
 
         this.setState({ mealPic1: this.state.meal1 })
         this.setState({ mealPic2: this.state.meal2 })
@@ -53,14 +57,24 @@ export default class Carousel extends Component {
       updateCarouselCard(currentMeal) {
         // this.interval = setTimeout(() => {
             if(currentMeal === 1){
-                this.setState({ currentMealShowing: this.state.meal1 })
+                this.setState({ 
+                    currentMealShowing: this.state.meal1,
+                    currentLink: this.state.meal1.fields.slug
+                })
             }
             else if(currentMeal === 2){
-                this.setState({ currentMealShowing: this.state.meal2 })
+                this.setState({ 
+                    currentMealShowing: this.state.meal2,
+                    currentLink: this.state.meal2.fields.slug
+                })
             }
             else if(currentMeal === 3){
-                this.setState({ currentMealShowing: this.state.meal3 })
+                this.setState({ 
+                    currentMealShowing: this.state.meal3,
+                    currentLink: this.state.meal3.fields.slug
+                })
             }
+            // this.setState({ currentLink: this.state.currentMealShowing.field.slug })
         // }, 50);
       }
 
@@ -115,77 +129,80 @@ render() {
                 </div>
             </div>
 
-            <div id="card">
-                <div className="cardContainer" id="cardContainer1">
-                    <span className="carouselCardTitle">{this.state.meal1.frontmatter.title}</span>
-                    <span className="carouselCardDate">{this.state.meal1.frontmatter.date}</span>
-                    <StarRating rating={ this.state.meal1.frontmatter.rating }></StarRating>
-                    <div className="foodInformation">
-                        <div className="foodInfoItem">
-                            <img src={require("../images/clock.png")} alt=""></img>
-                            <span>{this.state.meal1.frontmatter.prepTime}</span>
+            <Link to={this.state.currentLink}>
+                <div id="card">
+                    <div className="cardContainer" id="cardContainer1">
+                        <span className="carouselCardTitle">{this.state.meal1.frontmatter.title}</span>
+                        <span className="carouselCardDate">{this.state.meal1.frontmatter.date}</span>
+                        <StarRating rating={ this.state.meal1.frontmatter.rating }></StarRating>
+                        <div className="foodInformation">
+                            <div className="foodInfoItem">
+                                <img src={require("../images/clock.png")} alt=""></img>
+                                <span>{this.state.meal1.frontmatter.prepTime}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/spatulaX.png")} alt=""></img>
+                                <span>{this.state.meal1.frontmatter.difficulty}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/checkMark.png")} alt=""></img>
+                                <span>{this.state.meal1.frontmatter.ingredientCount}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/flame.png")} alt=""></img>
+                                <span>{this.state.meal1.frontmatter.heatLevel}</span>
+                            </div>
                         </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/spatulaX.png")} alt=""></img>
-                            <span>{this.state.meal1.frontmatter.difficulty}</span>
+                    </div>
+                    <div className="cardContainer" id="cardContainer2">
+                        <span className="carouselCardTitle">{this.state.meal2.frontmatter.title}</span>
+                        <span className="carouselCardDate">{this.state.meal2.frontmatter.date}</span>
+                        <StarRating rating={ this.state.meal2.frontmatter.rating }></StarRating>
+                        <div className="foodInformation">
+                            <div className="foodInfoItem">
+                                <img src={require("../images/clock.png")} alt=""></img>
+                                <span>{this.state.meal2.frontmatter.prepTime}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/spatulaX.png")} alt=""></img>
+                                <span>{this.state.meal2.frontmatter.difficulty}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/checkMark.png")} alt=""></img>
+                                <span>{this.state.meal2.frontmatter.ingredientCount}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/flame.png")} alt=""></img>
+                                <span>{this.state.meal2.frontmatter.heatLevel}</span>
+                            </div>
                         </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/checkMark.png")} alt=""></img>
-                            <span>{this.state.meal1.frontmatter.ingredientCount}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/flame.png")} alt=""></img>
-                            <span>{this.state.meal1.frontmatter.heatLevel}</span>
+                    </div>
+                    <div className="cardContainer" id="cardContainer3">
+                        <span className="carouselCardTitle">{this.state.meal3.frontmatter.title}</span>
+                        <span className="carouselCardDate">{this.state.meal3.frontmatter.date}</span>
+                        <StarRating rating={ this.state.meal3.frontmatter.rating }></StarRating>
+                        <div className="foodInformation">
+                            <div className="foodInfoItem">
+                                <img src={require("../images/clock.png")} alt=""></img>
+                                <span>{this.state.meal3.frontmatter.prepTime}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/spatulaX.png")} alt=""></img>
+                                <span>{this.state.meal3.frontmatter.difficulty}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/checkMark.png")} alt=""></img>
+                                <span>{this.state.meal3.frontmatter.ingredientCount}</span>
+                            </div>
+                            <div className="foodInfoItem">
+                                <img src={require("../images/flame.png")} alt=""></img>
+                                <span>{this.state.meal3.frontmatter.heatLevel}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="cardContainer" id="cardContainer2">
-                    <span className="carouselCardTitle">{this.state.meal2.frontmatter.title}</span>
-                    <span className="carouselCardDate">{this.state.meal2.frontmatter.date}</span>
-                    <StarRating rating={ this.state.meal2.frontmatter.rating }></StarRating>
-                    <div className="foodInformation">
-                        <div className="foodInfoItem">
-                            <img src={require("../images/clock.png")} alt=""></img>
-                            <span>{this.state.meal2.frontmatter.prepTime}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/spatulaX.png")} alt=""></img>
-                            <span>{this.state.meal2.frontmatter.difficulty}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/checkMark.png")} alt=""></img>
-                            <span>{this.state.meal2.frontmatter.ingredientCount}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/flame.png")} alt=""></img>
-                            <span>{this.state.meal2.frontmatter.heatLevel}</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="cardContainer" id="cardContainer3">
-                    <span className="carouselCardTitle">{this.state.meal3.frontmatter.title}</span>
-                    <span className="carouselCardDate">{this.state.meal3.frontmatter.date}</span>
-                    <StarRating rating={ this.state.meal3.frontmatter.rating }></StarRating>
-                    <div className="foodInformation">
-                        <div className="foodInfoItem">
-                            <img src={require("../images/clock.png")} alt=""></img>
-                            <span>{this.state.meal3.frontmatter.prepTime}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/spatulaX.png")} alt=""></img>
-                            <span>{this.state.meal3.frontmatter.difficulty}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/checkMark.png")} alt=""></img>
-                            <span>{this.state.meal3.frontmatter.ingredientCount}</span>
-                        </div>
-                        <div className="foodInfoItem">
-                            <img src={require("../images/flame.png")} alt=""></img>
-                            <span>{this.state.meal3.frontmatter.heatLevel}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </Link>
+            
 
             <div id="carouselProgress">
                 <div id="cProg1" className="cProgBar"></div>
