@@ -1,0 +1,50 @@
+---
+title: "Sushi - California Rolls"
+description: This post is related to the gatsbyjs
+prepTime: '1.5 hours'
+ingredientCount: '6  ingredients'
+difficulty: 'Intermediate'
+heatLevel: 'None'
+date: '2019-01-20'
+rating: 3
+shortName: 'californiaRoll'
+headerName: 'californiaRollHeader'
+image: californiaRollHeader.png
+recipeIntroParagraph: "This is a classic California sushi roll recipe. Doesn't get much easier than this in terms of making sushi. Some people might not even consider it legitimate sushi because it doesn't contain real fish, but because it was my first sushi attempt, I'm gonna count it. Making these rolls gave me a new appreciation for professional sushi chefs. It is very difficult to get the rice to do what you want it to, and shape it perfectly to both look good and keep the contents inside the roll. There were also a few things I didn't include in the preparation that could have given the rolls more flavor, like adding rice vinegar after cooking the rice. Overall, I was happy with the way the rolls turned out."
+sourceLink: ''
+sourceWebsite: ''
+flair: ''
+---
+<h1 style="color: #2B2B2B;">Ingredients</h1>
+
+<h3>Safeway</h3>
+<ul style="font-size: 20px;">
+    <li>Sushi rice</li>
+    <li>Imitation crab sticks</li>
+    <li>2 large hoss avocados</li>
+    <li>1 cucumber, cut into sticks</li>
+    <li>Sesame seeds</li>
+</ul>
+
+<h3>House of Rice</h3>
+<ul style="font-size: 20px; margin: 0 0 50px 0;">
+    <li>4 half sheets sushi grade nori</li>
+</ul>
+
+<h1 style="color: #2B2B2B;  margin-top: 40px;">Cooking Equipment</h1>
+<ul style="font-size: 20px; margin: 0 0 50px 0;">
+    <li style="margin: 5px 0;">Bamboo sushi roller</li>
+</ul>
+
+<h1 style="color: #2B2B2B;">Cooking Instructions</h1>
+<ol style="font-size: 20px" className="cookingInstructionsOL">
+    <li style="margin: 5px 0;">Wash the rice in a large bowl of water. Empty the bowl through a strainer every few minutes so the rice is saved. You will start to notice the water in the bowl becoming increasingly clearer each time the water is changed. Repeat this until the water is mostly clear.</li>
+    <li style="margin: 5px 0;">Cook the rice in a medium pot. Use the instructions listed on the bag/box of the rice for guidance.</li>
+    <li style="margin: 5px 0;">Fan the rice to quickly cool it to room temperature once it is done cooking.</li>
+    <li style="margin: 5px 0;">Place a sheet of nori on your sushi roller. Make sure the rough side of the nori is face up.</li>
+    <li style="margin: 5px 0;">Once the rice is cool, evenly place rice on the sheet of nori. You should not completely cover the sheet in rice, but rather go for ~90% coverage.</li>
+    <li style="margin: 5px 0;">Flip the sheet of nori so that the side with the rice is facing down on the sushi roller.</li>
+    <li style="margin: 5px 0;">Place the imitation crab, avocado, and cucumber horizontally in the middle of the sheet of nori.</li>
+    <li style="margin: 5px 0;">Using the sushi roller, roll the sheet tightly, making sure the contents of the sushi stay compact inside.</li>
+    <li style="margin: 5px 0;">Once the roll is complete and sticks together, use a large knife to cut the roll into smaller pieces. Wet the knife before each cut so that the rice does not stick and the cuts are clean.</li>
+</ol>
