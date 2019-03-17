@@ -1,12 +1,16 @@
 
 .post-list {
     outline: 1px solid grey;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
     margin-bottom: 20px;
 }
 
 .post-list:hover {
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+            transform: scale(1.01);
 }
 
 .cookingInstrucitonsOL li {
