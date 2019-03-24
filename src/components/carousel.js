@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby'
-// import Img from 'gatsby-image';
 
 import './carousel.css';
 import StarRating from './starsRating.js'
@@ -11,13 +10,13 @@ export default class Carousel extends Component {
         super();
         this.state = { 
             scaleRatio: 1,
-            meal1: props.mealData[0].node,
-            meal2: props.mealData[1].node,
-            meal3: props.mealData[2].node,
-            currentMealShowing: props.mealData[0].node,
-            changeTableSpot: 1,
-            mealPic1: props.mealData[0].node,
-            mealPic2: props.mealData[1].node,
+            allMealData: props.mealData,
+            currentMealIndex: 0,
+            nextMealIndex: 1,
+            mealSlot0: props.mealData[0],
+            mealSlot1: props.mealData[1],
+            slotHiddenInd: 1,
+            carouselCardMeal: props.mealData[0],
             currentLink: props.mealData[0].node.fields.slug
         };
 
@@ -25,81 +24,71 @@ export default class Carousel extends Component {
 
       }
       
-      componentDidMount() {
+    componentDidMount() {
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
 
-        this.setState({ currentMealShowing: this.state.meal1 })
+        this.setState({ currentLink: this.state.mealSlot0.node.fields.slug })
 
-        this.setState({ currentLink: this.state.meal1.fields.slug })
-
-        this.setState({ mealPic1: this.state.meal1 })
-        this.setState({ mealPic2: this.state.meal2 })
 
         this.interval = setInterval(() => {
 
-            if(this.state.currentMealShowing === this.state.meal1){ // meal 1 is showing, meal 2 is next
-                this.updateCarouselCard(2)
-                this.updateCarouselTable(3)
+            // set current index to next index, and next index to next+1 or start of array
+            this.setState({ 
+                currentMealIndex: this.state.nextMealIndex,
+                nextMealIndex: this.state.nextMealIndex + 1
+            })
+
+            // if next is beyond array limit, reset to start
+            if(this.state.nextMealIndex === this.state.allMealData.length){
+                this.setState({ nextMealIndex: 0 })
             }
-            else if(this.state.currentMealShowing === this.state.meal2){
-                this.updateCarouselCard(3)
+
+            // set hidden slot number to correct index
+            if(this.state.slotHiddenInd === 0){
+                this.setState({ slotHiddenInd: 1 })
                 this.updateCarouselTable(1)
+            } else if(this.state.slotHiddenInd === 1){
+                this.setState({ slotHiddenInd: 0 })
+                this.updateCarouselTable(0)
             }
-            else if(this.state.currentMealShowing === this.state.meal3){
-                this.updateCarouselCard(1)
-                this.updateCarouselTable(2)
-            }
+
+            this.updateCarouselCard()
 
         }, 5000);
-      }
+    }
 
-      updateCarouselCard(currentMeal) {
-        // this.interval = setTimeout(() => {
-            if(currentMeal === 1){
-                this.setState({ 
-                    currentMealShowing: this.state.meal1,
-                    currentLink: this.state.meal1.fields.slug
-                })
-            }
-            else if(currentMeal === 2){
-                this.setState({ 
-                    currentMealShowing: this.state.meal2,
-                    currentLink: this.state.meal2.fields.slug
-                })
-            }
-            else if(currentMeal === 3){
-                this.setState({ 
-                    currentMealShowing: this.state.meal3,
-                    currentLink: this.state.meal3.fields.slug
-                })
-            }
-            // this.setState({ currentLink: this.state.currentMealShowing.field.slug })
-        // }, 50);
-      }
-
-      updateCarouselTable(mealNum) {
+    updateCarouselCard() {
         this.interval = setTimeout(() => {
-            if(this.state.changeTableSpot === 1){
-                     if(mealNum === 1){ this.setState({ mealPic1: this.state.meal1 }) }
-                else if(mealNum === 2){ this.setState({ mealPic1: this.state.meal2 }) }
-                else if(mealNum === 3){ this.setState({ mealPic1: this.state.meal3 }) }
-                this.setState({ changeTableSpot: 2 })
-            } 
-            else if(this.state.changeTableSpot === 2){
-                     if(mealNum === 1){ this.setState({ mealPic2: this.state.meal1 }) }
-                else if(mealNum === 2){ this.setState({ mealPic2: this.state.meal2 }) }
-                else if(mealNum === 3){ this.setState({ mealPic2: this.state.meal3 }) }
-                this.setState({ changeTableSpot: 1 })
+
+            this.setState({ 
+                carouselCardMeal: this.state.allMealData[this.state.currentMealIndex],
+                currentLink: this.state.allMealData[this.state.currentMealIndex].node.fields.slug
+            })
+        
+        }, 500);
+    }
+
+
+    updateCarouselTable(slotToChangeNum) {
+        this.interval = setTimeout(() => {
+
+            if(slotToChangeNum === 0){
+                this.setState({ mealSlot0: this.state.allMealData[this.state.nextMealIndex] })
+            } else if(slotToChangeNum === 1){
+                this.setState({ mealSlot1: this.state.allMealData[this.state.nextMealIndex] })
             }
+
         }, 1000);
-      }
+    }
       
-      componentWillUnmount() {
+
+    componentWillUnmount() {
         window.removeEventListener('resize', this.updateWindowDimensions);
         clearInterval(this.interval);
-      }
+    }
       
+
     updateWindowDimensions() {
         if(window.innerWidth > 700){
             this.setState({ scaleRatio: window.innerWidth/1360 });
@@ -111,20 +100,19 @@ export default class Carousel extends Component {
   
 
 render() {
-    const meal1Image = require('../images/carousel/'+this.state.mealPic1.frontmatter.shortName+'.png');
-    const meal2Image = require('../images/carousel/'+this.state.mealPic2.frontmatter.shortName+'.png');
+    const meal0Image = require('../images/carousel/'+this.state.mealSlot0.node.frontmatter.shortName+'.png');
+    const meal1Image = require('../images/carousel/'+this.state.mealSlot1.node.frontmatter.shortName+'.png');
 
     return (
         <div id="rotatingFoodWrapper" style={{ zoom: this.state.scaleRatio }}>
-            {/* <span id="recentMealsText">Recent Meals</span> */}
 
             <div id="tableWrapper">
                 <div id="table">
                     <div id="tableItemWrap1" className="tableItemWrapper">
-                        <img id="tableItem1" className="tableItemImg" src={meal1Image} alt="" />
+                        <img id="tableItem1" className="tableItemImg" src={meal0Image} alt="" />
                     </div>
                     <div id="tableItemWrap2" className="tableItemWrapper">
-                        <img id="tableItem2" className="tableItemImg" src={meal2Image} alt="" />
+                        <img id="tableItem2" className="tableItemImg" src={meal1Image} alt="" />
                     </div>
                 </div>
             </div>
@@ -132,83 +120,30 @@ render() {
             <Link to={this.state.currentLink}>
                 <div id="card">
                     <div className="cardContainer" id="cardContainer1">
-                        <span className="carouselCardTitle">{this.state.meal1.frontmatter.title}</span>
-                        <span className="carouselCardDate">{this.state.meal1.frontmatter.date}</span>
-                        <StarRating rating={ this.state.meal1.frontmatter.rating }></StarRating>
+                        <span className="carouselCardTitle">{this.state.carouselCardMeal.node.frontmatter.title}</span>
+                        <span className="carouselCardDate">{this.state.carouselCardMeal.node.frontmatter.date}</span>
+                        <StarRating rating={ this.state.carouselCardMeal.node.frontmatter.rating }></StarRating>
                         <div className="foodInformation">
                             <div className="foodInfoItem">
                                 <img src={require("../images/clock.png")} alt=""></img>
-                                <span>{this.state.meal1.frontmatter.prepTime}</span>
+                                <span>{this.state.carouselCardMeal.node.frontmatter.prepTime}</span>
                             </div>
                             <div className="foodInfoItem">
                                 <img src={require("../images/spatulaX.png")} alt=""></img>
-                                <span>{this.state.meal1.frontmatter.difficulty}</span>
+                                <span>{this.state.carouselCardMeal.node.frontmatter.difficulty}</span>
                             </div>
                             <div className="foodInfoItem">
                                 <img src={require("../images/checkMark.png")} alt=""></img>
-                                <span>{this.state.meal1.frontmatter.ingredientCount}</span>
+                                <span>{this.state.carouselCardMeal.node.frontmatter.ingredientCount}</span>
                             </div>
                             <div className="foodInfoItem">
                                 <img src={require("../images/flame.png")} alt=""></img>
-                                <span>{this.state.meal1.frontmatter.heatLevel}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="cardContainer" id="cardContainer2">
-                        <span className="carouselCardTitle">{this.state.meal2.frontmatter.title}</span>
-                        <span className="carouselCardDate">{this.state.meal2.frontmatter.date}</span>
-                        <StarRating rating={ this.state.meal2.frontmatter.rating }></StarRating>
-                        <div className="foodInformation">
-                            <div className="foodInfoItem">
-                                <img src={require("../images/clock.png")} alt=""></img>
-                                <span>{this.state.meal2.frontmatter.prepTime}</span>
-                            </div>
-                            <div className="foodInfoItem">
-                                <img src={require("../images/spatulaX.png")} alt=""></img>
-                                <span>{this.state.meal2.frontmatter.difficulty}</span>
-                            </div>
-                            <div className="foodInfoItem">
-                                <img src={require("../images/checkMark.png")} alt=""></img>
-                                <span>{this.state.meal2.frontmatter.ingredientCount}</span>
-                            </div>
-                            <div className="foodInfoItem">
-                                <img src={require("../images/flame.png")} alt=""></img>
-                                <span>{this.state.meal2.frontmatter.heatLevel}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="cardContainer" id="cardContainer3">
-                        <span className="carouselCardTitle">{this.state.meal3.frontmatter.title}</span>
-                        <span className="carouselCardDate">{this.state.meal3.frontmatter.date}</span>
-                        <StarRating rating={ this.state.meal3.frontmatter.rating }></StarRating>
-                        <div className="foodInformation">
-                            <div className="foodInfoItem">
-                                <img src={require("../images/clock.png")} alt=""></img>
-                                <span>{this.state.meal3.frontmatter.prepTime}</span>
-                            </div>
-                            <div className="foodInfoItem">
-                                <img src={require("../images/spatulaX.png")} alt=""></img>
-                                <span>{this.state.meal3.frontmatter.difficulty}</span>
-                            </div>
-                            <div className="foodInfoItem">
-                                <img src={require("../images/checkMark.png")} alt=""></img>
-                                <span>{this.state.meal3.frontmatter.ingredientCount}</span>
-                            </div>
-                            <div className="foodInfoItem">
-                                <img src={require("../images/flame.png")} alt=""></img>
-                                <span>{this.state.meal3.frontmatter.heatLevel}</span>
+                                <span>{this.state.carouselCardMeal.node.frontmatter.heatLevel}</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </Link>
-            
-
-            <div id="carouselProgress">
-                <div id="cProg1" className="cProgBar"></div>
-                <div id="cProg2" className="cProgBar"></div>
-                <div id="cProg3" className="cProgBar"></div>
-            </div>
 
         </div>
     );

@@ -46,7 +46,7 @@ export default IndexPage
 
 export const listQuery = graphql`
   query ListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 3) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           fields{
