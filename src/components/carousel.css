@@ -45,25 +45,11 @@
     100%   { opacity: 1; visibility: visible; }
   }
   
-
-  #recentMealsText {
-    position: relative;
-    top: 30px;
-    left: 30px;
-    padding: 0 10px;
-    display: inline;
-    font-size: 20px;
-    background-color: #FBFBFA;
-    color: #2B2B2B;
-    opacity: 0.3;
-    font-family: 'PT Serif', sans-serif;
-  }
-  
   
   #tableWrapper {
     position: relative;
     left: -470px;
-    top: -100px;
+    top: -80px;
     width: 1000px;
     height: 1000px;
     -webkit-perspective: 1200px;
@@ -74,7 +60,7 @@
 
   @media only screen and (max-width: 700px) {
     #tableWrapper {
-      top: 430px;
+      top: 460px;
       zoom: 1.15;
     }
   }
