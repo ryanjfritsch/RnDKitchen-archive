@@ -89,12 +89,6 @@
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
-
-  /* @media only screen and (max-width: 700px) {
-    #table {
-      
-    }
-  } */
   
   html {
     --itemStart: -40deg;
@@ -139,32 +133,32 @@
   
   
   @-webkit-keyframes tableSpin {
-    0%   { -webkit-transform: rotateX(78deg) rotateZ(140deg); transform: rotateX(78deg) rotateZ(140deg); }
-    10%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    20%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    30%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    40%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    50%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    60%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    70%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    80%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    90%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    100%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
+    0%   { -webkit-transform: rotateX(78deg) rotateZ(140deg); }
+    10%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    20%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    30%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    40%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    50%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    60%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    70%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    80%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    90%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    100%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
   }
   
   
   @keyframes tableSpin {
-    0%   { -webkit-transform: rotateX(78deg) rotateZ(140deg); transform: rotateX(78deg) rotateZ(140deg); }
-    10%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    20%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    30%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    40%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    50%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); transform: rotateX(78deg) rotateZ(320deg); }
-    60%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    70%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    80%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    90%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
-    100%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); transform: rotateX(78deg) rotateZ(500deg); }
+    0%   { -webkit-transform: rotateX(78deg) rotateZ(140deg); }
+    10%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    20%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    30%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    40%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    50%   { -webkit-transform: rotateX(78deg) rotateZ(320deg); }
+    60%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    70%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    80%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    90%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
+    100%   { -webkit-transform: rotateX(78deg) rotateZ(500deg); }
   }
   
   html {
