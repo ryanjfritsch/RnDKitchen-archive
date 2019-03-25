@@ -103,8 +103,10 @@ render() {
     const meal0Image = require('../images/carousel/'+this.state.mealSlot0.node.frontmatter.shortName+'.png');
     const meal1Image = require('../images/carousel/'+this.state.mealSlot1.node.frontmatter.shortName+'.png');
 
+    var foodWrapperStyle = { "transform": "scale(" + this.state.scaleRatio + ")" }
+
     return (
-        <div id="rotatingFoodWrapper" style={{ zoom: this.state.scaleRatio }}>
+        <div id="rotatingFoodWrapper" style={ foodWrapperStyle }>
 
             <div id="tableWrapper">
                 <div id="table">
