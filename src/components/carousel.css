@@ -197,17 +197,17 @@
   
   /* commenting out to try to fix Safari CSS error, food jumping up from table */
   @keyframes itemRotate {
-    0%    { transform: rotateZ(var(--itemStart)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    10%   { transform: rotateZ(var(--itemMid)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    20%   { transform: rotateZ(var(--itemMid)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    30%   { transform: rotateZ(var(--itemMid)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    40%   { transform: rotateZ(var(--itemMid)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    50%   { transform: rotateZ(var(--itemMid)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    60%   { transform: rotateZ(var(--itemEnd)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    70%   { transform: rotateZ(var(--itemEnd)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    80%   { transform: rotateZ(var(--itemEnd)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    90%   { transform: rotateZ(var(--itemEnd)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
-    100%  { transform: rotateZ(var(--itemEnd)) translate3d(0, 0, 160px) rotateX(-90deg) rotateY(90deg); }
+    0%    { transform: rotateZ(var(--itemStart)) rotateX(-90deg) rotateY(90deg); }
+    10%   { transform: rotateZ(var(--itemMid)) rotateX(-90deg) rotateY(90deg); }
+    20%   { transform: rotateZ(var(--itemMid)) rotateX(-90deg) rotateY(90deg); }
+    30%   { transform: rotateZ(var(--itemMid)) rotateX(-90deg) rotateY(90deg); }
+    40%   { transform: rotateZ(var(--itemMid)) rotateX(-90deg) rotateY(90deg); }
+    50%   { transform: rotateZ(var(--itemMid)) rotateX(-90deg) rotateY(90deg); }
+    60%   { transform: rotateZ(var(--itemEnd)) rotateX(-90deg) rotateY(90deg); }
+    70%   { transform: rotateZ(var(--itemEnd)) rotateX(-90deg) rotateY(90deg); }
+    80%   { transform: rotateZ(var(--itemEnd)) rotateX(-90deg) rotateY(90deg); }
+    90%   { transform: rotateZ(var(--itemEnd)) rotateX(-90deg) rotateY(90deg); }
+    100%  { transform: rotateZ(var(--itemEnd)) rotateX(-90deg) rotateY(90deg); }
   }
   
   
