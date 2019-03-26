@@ -10,6 +10,7 @@ export default class Carousel extends Component {
         super();
         this.state = { 
             scaleRatio: 1,
+            windowWidthState: 1,
             allMealData: props.mealData,
             currentMealIndex: 0,
             nextMealIndex: 1,
@@ -90,6 +91,7 @@ export default class Carousel extends Component {
       
 
     updateWindowDimensions() {
+        this.setState({ windowWidthState: window.innerWidth })
         if(window.innerWidth > 700){
             this.setState({ scaleRatio: window.innerWidth/1360 });
         } else { 
@@ -105,7 +107,7 @@ render() {
 
     var carouselWrapperStyle = { }
 
-    if(window.innerWidth > 700){
+    if(this.state.windowWidthState > 700){
         carouselWrapperStyle = {
             "height": 718 * this.state.scaleRatio + "px"
         }
