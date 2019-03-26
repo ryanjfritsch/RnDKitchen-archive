@@ -1,0 +1,4 @@
+.indexPageWrapper {
+    display: flex;
+    flex-direction: column;
+}

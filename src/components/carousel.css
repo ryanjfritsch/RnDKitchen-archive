@@ -11,8 +11,9 @@
     background-repeat: no-repeat;
     background-origin: bottom;
     margin: 0;
-    overflow: hidden;
     opacity: 0;
+    overflow: hidden;
+    box-sizing: border-box;
     -webkit-transform-origin: top left;
             transform-origin: top left;
     -webkit-animation-name: fadeInCarousel;
@@ -30,8 +31,8 @@
 
 @media only screen and (max-width: 700px) {
   #rotatingFoodWrapper {
-    height: 1350px;
     width: 750px;
+    height: 1100px;
     background-position-x: -430px;
     background-size: 350%;
   }
@@ -62,7 +63,7 @@
 
   @media only screen and (max-width: 700px) {
     #tableWrapper {
-      top: 460px;
+      top: 250px;
       zoom: 1.15;
     }
   }
@@ -227,6 +228,7 @@
     #card {
       left: 90px;
       top: -1095px;
+      height: 320px;
     }
   }
   
@@ -369,5 +371,32 @@
   color: #2B2B2B;
 }
 
+
+@media only screen and (max-width: 700px) {
+
+  .foodInformation {
+    padding-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .foodInfoItem {
+    width: 25%;
+    height: 25%;
+  }
+
+  .foodInfoItem img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .foodInfoItem span {
+    font-size: 16px;
+    color: #2B2B2B;
+  }
+}
 
 
