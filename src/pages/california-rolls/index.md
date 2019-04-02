@@ -2,7 +2,7 @@
 title: "Sushi - California Rolls"
 description: This post is related to the gatsbyjs
 prepTime: '1.5 hours'
-ingredientCount: '6  ingredients'
+ingredientCount: '6 ingredients'
 difficulty: 'Intermediate'
 heatLevel: 'None'
 date: '2019-01-20'
