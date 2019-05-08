@@ -56,7 +56,7 @@ flair: ''
     <li style="margin: 5px 0;">Whisk the eggs, granulated sugar, vanilla, cinnamon, nutmeg and 1/2 teaspoon salt in large bowl until combined and smooth.</li>
     <li style="margin: 5px 0;">Whisk in the milk and heavy cream. Pour the egg mixture evenly over the bread slices, making sure that all slices have been coated.</li>
     <li style="margin: 5px 0;">Cover the dish and refrigerate for at least 8 hours or up to 12.</li>
-    <li style="margin: 5px 0;">Position an oven rack in the center of the oven, and preheat to 350 degrees F.</li>
+    <li style="margin: 5px 0;">Position an oven rack in the center of the oven, and preheat to 350°F</li>
     <li style="margin: 5px 0;">For the crumble: Toss the brown sugar, flour, cinnamon, nutmeg and 1/4 teaspoon salt together in a medium bowl.</li>
     <li style="margin: 5px 0;">Add the butter and work it in with your fingers until the mixture is crumbly with pea-sized bits of butter. Mix in the walnuts.</li>
     <li style="margin: 5px 0;">To assemble: Give the bread slices in the casserole dish a gentle push into the custard. Sprinkle the crumble evenly over the top.</li>
