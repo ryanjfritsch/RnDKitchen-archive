@@ -60,7 +60,7 @@ flair: ''
     <li style="margin: 5px 0;">Meanwhile, heat 1 tablespoon of oil in the same frying pan over medium heat.</li>
     <li style="margin: 5px 0;">Add the spinach and cook until the spinach wilts and the juices evaporate, stirring often, about 10 minutes. Cool to room temperature.</li>
     <li style="margin: 5px 0;">Squeeze the spinach to drain as much liquid as possible.</li>
-    <li style="margin: 5px 0;">Position the rack on the bottom of the oven, and preheat the oven to 375 degrees F.</li>
+    <li style="margin: 5px 0;">Position the rack on the bottom of the oven, and preheat the oven to 375°F.</li>
     <li style="margin: 5px 0;">Into a large bowl, add egg yolks and beat lightly.</li>
     <li style="margin: 5px 0;">Stir in the ricotta, mozzarella, and 1/3 cup of Parmesan cheese./li>
     <li style="margin: 5px 0;">Add the sausage, the spinach and prosciutto to the mixture and stir to combine.</li>
