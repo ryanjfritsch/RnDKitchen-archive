@@ -10,7 +10,7 @@ rating: 3
 shortName: 'mileHighPie'
 headerName: 'mileHighPieHeader'
 image: mileHighPieHeader.png
-recipeIntroParagraph: "This is the first desert dish of R&D Kitchen, and it turned out ok. Only 3/5 stars unfortunately. I am a huge peanut butter fan so I was really looking forward to making this pie. The Nutter Butter crust with the brownie filling was excellent, but was over-powered by the two layers of peanut butter whipped cream and normal whipped cream. I found that the two tastes evened out when I scraped some of the whipped cream topping off. The chocolate chips and peanut butter chips on top were a good addition to the topping and helped bring back some of the flavors of the middle of the pie. However, I don't think it helped enough. Next time I would make/use about half of the instructed peanut butter and whipped cream topping."
+recipeIntroParagraph: "This is the first desert dish of R&D Kitchen, and it turned out ok. Only 3/5 stars unfortunately. I am a huge peanut butter fan so I was really looking forward to making this pie. The Nutter Butter crust with the brownie filling was excellent, but was over-powered by the two layers of peanut butter whipped cream and normal whipped cream. I found that the two tastes evened out when I scraped some of the whipped cream topping off. The chocolate chips and peanut butter chips on top were a good addition to the topping and helped bring back some of the flavors of the middle of the pie. However, I don't think it helped enough. Next time I would make/use about half of the instructed peanut butter and whipped cream topping. "
 sourceLink: 'https://www.foodnetwork.com/recipes/paula-deen/beer-battered-fish-and-chips-recipe-2040495'
 sourceWebsite: 'Food Network'
 flair: ''
