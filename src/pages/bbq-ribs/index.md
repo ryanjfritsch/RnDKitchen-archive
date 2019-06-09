@@ -19,7 +19,7 @@ flair: ''
 
 <!-- <h3>Costco</h3> -->
 <ul style="font-size: 20px;">
-    <li>Pork Ribs (pack of 3 racks)</li>
+    <li>St. Louis Cut Pork Spare Ribs (pack of 3 racks)</li>
     <li>Simply Supreme Honey Mustard<br>(or a Jalapeño Honey Mustard)</li>
     <li>Private Selection Kansas City Seasoning Rub - Sweet and Smoky<br>(You can use any rub/seasoning you like)</li>
     <li>Stubb's Sweet Heat Legendary Bar-B-Q Sauce</li>
