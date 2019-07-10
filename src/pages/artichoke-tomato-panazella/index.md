@@ -1,7 +1,7 @@
 ---
 title: "Artichoke and Tomato Panzanella"
 description: This post is related to the gatsbyjs
-prepTime: '2 hours'
+prepTime: '45 minutes'
 ingredientCount: '8 ingredients'
 difficulty: 'Easy'
 heatLevel: 'None'
