@@ -1,5 +1,5 @@
 ---
-title: "Artichoke and Tomato Panzanella"
+title: "Artichoke Tomato Panzanella"
 description: This post is related to the gatsbyjs
 prepTime: '45 minutes'
 ingredientCount: '8 ingredients'
