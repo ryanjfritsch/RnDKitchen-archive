@@ -45,6 +45,11 @@ flair: ''
     <li>Lemon wedges, for serving</li>
 </ul>
 
+<h1 style="color: #2B2B2B;  margin-top: 40px;">Cooking Equipment</h1>
+<ul style="font-size: 20px; margin: 0 0 50px 0;">
+    <li style="margin: 5px 0;">15" Paella Pan</li>
+</ul>
+
 <h1 style="color: #2B2B2B; margin-top: 40px;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">Combine the paprika and oregano in a small bowl. Rub the spice mix all over the chicken and marinate chicken for 1 hour in the refrigerator.</li>
