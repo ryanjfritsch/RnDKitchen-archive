@@ -10,7 +10,7 @@ rating: 3
 shortName: 'bananaCrunchMuffins'
 headerName: 'bananaCrunchMuffinsHeader'
 image: bananaCrunchMuffinsHeader.png
-recipeIntroParagraph: "Here's another recipe of a food I've always liked but never tried to make on my own. The addition of granola and walnuts in this recipe gave it an extra 'breakfast' taste which I really enjoyed. I'm sure I've had banana muffins with ingredients similar to these, but it was nice to see how easy it was to make these. A word of warning for next time: the first batch of these I made stuck to the pan even with Pam applied before baking. I used muffin pan liners the second time and everything went much smoother."
+recipeIntroParagraph: "Here's another recipe of a food I have always liked but never tried to make on my own. The addition of granola and walnuts in this recipe gave it an extra 'breakfast' taste which I really enjoyed. I'm sure I've had banana muffins with ingredients similar to these, but it was nice to see how easy it was to make these. A word of warning for next time: the first batch of these I made stuck to the pan even with Pam applied before baking. I used muffin pan liners the second time and everything went much smoother."
 sourceLink: 'https://www.foodnetwork.com/recipes/ina-garten/banana-crunch-muffins-recipe-1915829'
 sourceWebsite: 'Food Network'
 flair: ''
