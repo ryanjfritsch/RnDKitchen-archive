@@ -67,3 +67,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# hi-res images
+src/images/carousel/hi-res
+src/images/headers/hi-res
