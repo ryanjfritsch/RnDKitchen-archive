@@ -35,9 +35,6 @@
     background-size: 350%;
   }
 }
-    100%   { opacity: 1; visibility: visible; }
-  }
-  
 
 @-webkit-keyframes fadeInCarousel {
   0% {
