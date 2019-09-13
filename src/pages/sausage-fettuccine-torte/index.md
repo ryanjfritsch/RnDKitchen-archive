@@ -1,5 +1,5 @@
 ---
-title: 'Sausage Fettuccine Torta'
+title: 'Sausage Fettuccine Torte'
 description: This post is related to the gatsbyjs
 prepTime: '30 minutes'
 ingredientCount: '9 ingredients'
@@ -7,10 +7,10 @@ difficulty: 'Easy'
 heatLevel: 'Mild'
 date: '2019-09-12'
 rating: 5
-shortName: 'sausageFettuccineTorta'
-headerName: 'sausageFettuccineTortaHeader'
-image: sausageFettuccineTortaHeader.png
-recipeIntroParagraph: 'This recipe was given to me by my uncle Dwight. I really like pasta, and this recipe has lots of good stuff to go with the fettuccine noodles. The Italian sausage adds great flavor, and brings the dish to the next level. It was cool to take the torta out of the oven, open the springform pan, and see everything had formed to the shape of a pie. I even served the dish like a pie. Really cool, and left me with lots of leftovers.'
+shortName: 'sausageFettuccineTorte'
+headerName: 'sausageFettuccineTorteHeader'
+image: sausageFettuccineTorteHeader.png
+recipeIntroParagraph: 'This recipe was given to me by my uncle Dwight. I'll pretty much eat anything with pasta, but this dish became a favorite with the addition of Italian sausage and veggies. It was cool to take the torta out of the oven, open the springform pan, and see everything had formed to the shape of a pie. I even served the dish like a pie. Really cool, and left me with lots of leftovers.'
 sourceLink: 'https://photos.app.goo.gl/UW4pmucoWfgZFkee6'
 sourceWebsite: 'Emilie A. Morse (Pure and Simple - Neiman Marcus)'
 flair: ''
