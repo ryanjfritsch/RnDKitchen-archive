@@ -10,7 +10,7 @@ rating: 5
 shortName: 'sausageFettuccineTorte'
 headerName: 'sausageFettuccineTorteHeader'
 image: sausageFettuccineTorteHeader.png
-recipeIntroParagraph: 'This recipe was given to me by my uncle Dwight. I'll pretty much eat anything with pasta, but this dish became a favorite with the addition of Italian sausage and veggies. It was cool to take the torta out of the oven, open the springform pan, and see everything had formed to the shape of a pie. I even served the dish like a pie. Really cool, and left me with lots of leftovers.'
+recipeIntroParagraph: "This recipe was given to me by my uncle Dwight. I'll pretty much eat anything with pasta, but this dish became a favorite with the addition of Italian sausage and veggies. It was cool to take the torta out of the oven, open the springform pan, and see everything had formed to the shape of a pie. I even served the dish like a pie. Really cool, and left me with lots of leftovers."
 sourceLink: 'https://photos.app.goo.gl/UW4pmucoWfgZFkee6'
 sourceWebsite: 'Emilie A. Morse (Pure and Simple - Neiman Marcus)'
 flair: ''
