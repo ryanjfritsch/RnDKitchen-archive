@@ -10,7 +10,7 @@ rating: 5
 shortName: 'lasagnaRolls'
 headerName: 'lasagnaRollsHeader'
 image: lasagnaRollsHeader.jpg
-recipeIntroParagraph: "Every time I do a Giada de Laurentiis recipe, it is incredible! This was no exception. She's a master with Italian food, and this was a cool alternative to lasagna. It was slightly complicated, and would have been completed easier with two people as there is a lot to do simultaneously. The final result was incredible though, and I would definitely recommend it. I ate it with three other people and we had no leftovers. I would suggest a side salad with this dish."
+recipeIntroParagraph: "Every time I do a Giada de Laurentiis recipe, it is incredible! This recipe was no exception. She's a master with Italian food, and this was a cool alternative to lasagna. It was slightly complicated, and would have been completed easier with two people as there is a lot to do simultaneously. The final result was incredible though, and I would definitely recommend it. I ate it with three other people and we had no leftovers. I would suggest a side salad with this dish."
 sourceLink: 'https://www.foodnetwork.com/recipes/giada-de-laurentiis/lasagna-rolls-recipe-1943979'
 sourceWebsite: 'Food Network'
 flair: ''
