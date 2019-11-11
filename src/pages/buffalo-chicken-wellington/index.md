@@ -18,7 +18,7 @@ flair: ''
 
 <h1 style="color: #2B2B2B;">Ingredients</h1>
 
-<h3>Safeway</h3>
+<h3>Whole Foods</h3>
 
 <h4>Sauce</h4>
 <ul style="font-size: 20px;">

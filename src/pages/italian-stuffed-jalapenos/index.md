@@ -18,7 +18,7 @@ flair: ''
 
 <h1 style="color: #2B2B2B;">Ingredients</h1>
 
-<h3>Safeway</h3>
+<h3>Morton William's</h3>
 <ul style="font-size: 20px;">
     <li>15 jalapenos, preferably red, cut in 1/2, seeded and deveined</li>
     <li>1 tablespoon canola oil</li>
