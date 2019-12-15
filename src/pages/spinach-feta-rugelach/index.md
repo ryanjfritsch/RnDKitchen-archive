@@ -38,8 +38,14 @@ flair: ''
 <ol style="font-size: 20px" className="cookingInstructionsOL">
     <li style="margin: 5px 0;">Preheat the oven to 425°F. Line two baking sheets with parchment paper.</li>
     <li style="margin: 5px 0;">Set the frozen spinach out on a plate at room temperature to soften slightly.</li>
-    <li style="margin: 5px 0;"></li>
-    <li style="margin: 5px 0;">Pour the batter into the pie crust, then scatter the pecan halves on top.</li>
-    <li style="margin: 5px 0;">Bake the pie for 30 minutes. Tent it lightly with aluminum foil, and bake for an additional 15 minutes, till the crust and top are both golden brown.</li>
-    <li style="margin: 5px 0;">Remove the pie from the oven, and allow it to cool for about 30 minutes before serving. Top with ice cream or whipped cream, if desired.</li>
+    <li style="margin: 5px 0;">Melt the butter in a large pot over medium heat. Add the onion and a pinch of salt. Cook, stirring often, until the onion is soft and translucent, 5 to 7 minutes.</li>
+    <li style="margin: 5px 0;">Add the garlic and a few turns of black pepper and cook until fragrant, 1 more minute.</li>
+    <li style="margin: 5px 0;">Add the flour and stir to combine, then stir in the spinach and a good pinch of salt. Cook, stirring, until the spinach is heated through and the mixture is combined.</li>
+    <li style="margin: 5px 0;">Stir in the feta, heavy cream, lemon juice and hot sauce, then remove it from the heat. Taste and adjust seasonings as desired.</li>
+    <li style="margin: 5px 0;">Roll out half of the pie dough on a lightly floured surface until it is a large round, about 1/4 inch thick. (If using store-bought pre-rolled dough, simply unroll it onto your surface.)</li>
+    <li style="margin: 5px 0;">Spread on half the spinach mixture in an even layer so that it covers the dough.</li>
+    <li style="margin: 5px 0;">Using a pizza cutter or knife, cut the dough like a pizza into 8 triangular wedges. Roll up each section starting at the wide end.</li>
+    <li style="margin: 5px 0;">Transfer the rugelach to the lined baking sheets, placing them 1 inch apart. Repeat with the other half of the dough and spinach filling.</li>
+    <li style="margin: 5px 0;">Lightly brush the tops with egg wash and sprinkle with sea salt.</li>
+    <li style="margin: 5px 0;">Bake until golden brown, about 20 minutes. Let cool slightly and enjoy. Store leftovers in the fridge and reheat in a toaster oven.</li>
 </ol>
