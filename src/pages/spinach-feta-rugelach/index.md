@@ -36,9 +36,9 @@ flair: ''
 
 <h1 style="color: #2B2B2B; margin-top: 40px;">Cooking Instructions</h1>
 <ol style="font-size: 20px" className="cookingInstructionsOL">
-    <li style="margin: 5px 0;">Preheat the oven to 375°F</li>
-    <li style="margin: 5px 0;">Beat the eggs, sugar, and salt for about 2 minutes at high speed, until they're thick and light-colored.</li>
-    <li style="margin: 5px 0;">Stir in the flour, the cooled, melted butter, and the flavor of your choice, then the chocolate chips/chunks and the diced pecans.</li>
+    <li style="margin: 5px 0;">Preheat the oven to 425°F. Line two baking sheets with parchment paper.</li>
+    <li style="margin: 5px 0;">Set the frozen spinach out on a plate at room temperature to soften slightly.</li>
+    <li style="margin: 5px 0;"></li>
     <li style="margin: 5px 0;">Pour the batter into the pie crust, then scatter the pecan halves on top.</li>
     <li style="margin: 5px 0;">Bake the pie for 30 minutes. Tent it lightly with aluminum foil, and bake for an additional 15 minutes, till the crust and top are both golden brown.</li>
     <li style="margin: 5px 0;">Remove the pie from the oven, and allow it to cool for about 30 minutes before serving. Top with ice cream or whipped cream, if desired.</li>
