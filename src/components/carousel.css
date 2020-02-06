@@ -13,6 +13,7 @@
   overflow: hidden;
   box-sizing: border-box;
   -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
   transform-origin: top left;
   -webkit-animation-name: fadeInCarousel;
   animation-name: fadeInCarousel;
@@ -373,7 +374,17 @@ html {
   top: -1045px;
   background-color: #fbfbfa;
   font-family: 'PT Serif', sans-serif;
-  -webkit-animation-name: menuSlide;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* -webkit-animation-name: menuSlide;
   animation-name: menuSlide;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
@@ -382,7 +393,7 @@ html {
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
   -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  animation-delay: 5s; */
   cursor: pointer;
 }
 
@@ -596,6 +607,20 @@ html {
   transition: 0s all;
 }
 
+.cardHeader {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .carouselCardTitle {
   font-size: 40px;
   color: #2b2b2b;
@@ -612,9 +637,9 @@ html {
 
 .foodInformation {
   height: 100%;
+  padding: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,13 +647,28 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.metricRow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .foodInfoItem {
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,26 +691,46 @@ html {
 }
 
 .foodInfoItem span {
-  font-size: 30px;
+  font-size: 25px;
   color: #2b2b2b;
 }
 
 @media only screen and (max-width: 700px) {
+  .cardContainer {
+    height: calc(100% - 20px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .cardHeader {
+    width: 100%;
+    height: auto;
+  }
+
   .foodInformation {
-    padding-top: 20px;
+    padding: 0px;
+    height: 100%;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
+    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .metricRow {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
 
   .foodInfoItem {
-    width: 25%;
-    height: 25%;
+    width: 120px;
+    height: 70px;
   }
 
   .foodInfoItem img {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin-bottom: 20px;
   }
