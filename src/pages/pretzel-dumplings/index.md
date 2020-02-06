@@ -2,7 +2,7 @@
 title: 'Pretzel Dumplings'
 description: This post is related to the gatsbyjs
 prepTime: '1 hour'
-ingredientCount: '13 ingredients'
+ingredientCount: '5 ingredients'
 difficulty: 'Easy'
 heatLevel: 'Mild'
 date: '2020-02-02'
